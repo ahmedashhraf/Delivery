@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llDescription" android:background="@drawable/bg_customer_feedback_small" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_24" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.jackandphantom.circularimageview.CircleImage android:id="@+id/ivUser" android:background="@color/white" android:visibility="visible" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_35" android:layout_marginTop="@dimen/dp_12" android:src="@drawable/ic_profile_place_holder"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_11">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_55">
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/Black" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jazmyne Shields" android:maxLines="1" android:includeFontPadding="false" android:textDirection="ltr"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                        <RatingBar android:id="@+id/ratingBar" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/dp_16" android:progressDrawable="@drawable/custom_rating_review_shop" android:rating="5" android:isIndicator="true" android:layout_below="@+id/rating_tv_title"/>
+                        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_11" android:textColor="@color/dark_gray_2" android:gravity="start" android:id="@+id/tvUserRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.5" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_2"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

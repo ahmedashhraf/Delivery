@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/myCoordinator" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_title_bar_bg_white"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1">
+        <include layout="@layout/row_google_map"/>
+        <androidx.cardview.widget.CardView android:id="@+id/cardShareUrl" android:padding="@dimen/dp_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11" android:layout_marginBottom="@dimen/dp_8" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/dp_4" app:cardMaxElevation="@dimen/dp_0" app:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_13" android:paddingBottom="@dimen/dp_13" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="@dimen/dp_0" android:paddingEnd="@dimen/dp_16">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llDirection" android:background="?attr/actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <ImageView android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_compass_new" android:contentDescription="@string/hint_select_location" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="#333333" android:id="@+id/tvLocationTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="#333333" android:id="@+id/tvAddess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabMapStyle" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_16" android:src="@drawable/ic_map_stlye" android:scaleType="center" android:layout_above="@+id/fabMylocation" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" app:backgroundTint="@color/White" app:elevation="6dp" app:fabSize="1"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabMylocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_40" android:src="@drawable/ic_my_location_black_24dp" android:scaleType="center" android:layout_above="@+id/cardShareUrl" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" app:backgroundTint="@color/White" app:elevation="6dp" app:fabSize="1"/>
+    </RelativeLayout>
+</LinearLayout>

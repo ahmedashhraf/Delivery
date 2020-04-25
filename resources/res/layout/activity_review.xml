@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/llMain" android:background="@color/light_gray_5" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/pending_order_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:animateLayoutChanges="true">
+        <include android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" layout="@layout/view_back_arrow_round"/>
+        <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_18" android:textColor="@color/color_title_text" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_my_reviews" android:singleLine="true"/>
+        <View android:id="@+id/focus_thief" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1dp" android:layout_height="1dp"/>
+    </FrameLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/pullToRefresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvReview" android:paddingTop="@dimen/dp_10" android:visibility="visible" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include layout="@layout/row_no_result_found_only_logo"/>
+            <View android:layout_gravity="top" android:background="@drawable/bottombar_shadow_search" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_6"/>
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

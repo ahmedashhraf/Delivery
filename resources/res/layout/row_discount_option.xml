@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llCouponBalance" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_15" android:textColor="@color/search_text_color" android:id="@+id/txtCouponBalanace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_coupon_option_coupon_balance" android:singleLine="false" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ivCheckCouponBalance" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tick"/>
+    </LinearLayout>
+</LinearLayout>

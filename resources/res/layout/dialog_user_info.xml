@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_170">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llHeaderTop" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_50"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llHeaderBottom" android:background="@color/White" android:layout_width="match_parent" android:layout_height="@dimen/dp_120" android:layout_below="@+id/llHeaderTop">
+                <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_18" android:textColor="@color/dialog_text_color" android:gravity="center_horizontal" android:id="@+id/txtUserName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_70" android:layout_marginRight="@dimen/dp_20" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20"/>
+                <RatingBar android:gravity="center_horizontal" android:id="@+id/rbCourierRate" android:layout_width="wrap_content" android:layout_height="@dimen/dp_23" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:progressDrawable="@drawable/custom_rating_fill_feedback" android:rating="0" android:stepSize="0.1" android:isIndicator="true" android:layout_below="@+id/rating_tv_title" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:background="@drawable/profilephotoframe" android:layout_width="@dimen/dp_105" android:layout_height="@dimen/dp_105" android:layout_marginBottom="@dimen/dp_60" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:id="@+id/imgUserPic" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:src="@drawable/hint_userpic"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/White" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/llAccountVerifed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ivAccountVerifed" android:background="@drawable/icon_ac_verified" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.mrsool.customeview.CustomeTextViewBold android:textColor="@color/apptheme_color" android:id="@+id/txtMeAccountVerified" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="@string/lbl_edit_p_account_is_verified" android:layout_marginStart="@dimen/dp_5"/>
+            </LinearLayout>
+            <View android:background="@color/dialog_text_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dp_5"/>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" android:weightSum="1">
+                <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_16" android:textColor="@color/dialog_text_color" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/lbl_edit_p_order_count" android:layout_weight="0.5"/>
+                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_16" android:textColor="@color/dialog_text_color" android:gravity="left" android:id="@+id/txtOrderCount" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <View android:background="@color/dialog_text_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llMeUserFeedback" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_10" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" android:weightSum="1">
+                <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_16" android:textColor="@color/dialog_text_color" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/lbl_edit_p_user_feedback" android:layout_weight="0.5"/>
+                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_16" android:textColor="@color/dialog_text_color" android:gravity="left" android:id="@+id/txtFeedbackCount" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="0.4"/>
+                <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_16" android:textColor="@color/dialog_text_color" android:gravity="center" android:id="@+id/txtFeedbackCountArrow" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="&gt;" android:layout_weight="0.1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

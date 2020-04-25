@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/fabOrderNow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_20" android:textDirection="ltr" android:layoutDirection="ltr" android:layout_marginEnd="@dimen/dp_20">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_order_now"/>
+    <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_12" android:textColor="@color/shop_type_color" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_order_now"/>
+</LinearLayout>

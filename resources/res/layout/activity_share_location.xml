@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="ltr" android:layoutDirection="ltr">
+    <include layout="@layout/row_txt_toolbar_back_wthout_shadow"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/dp_56">
+        <ImageView android:layout_gravity="center" android:id="@+id/imgBuyerPic" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" android:layout_marginLeft="13dp" android:src="@drawable/user_profile"/>
+        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="16sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/txtBuyerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:text=""/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@drawable/toolbar_dropshadow" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+        <FrameLayout android:id="@+id/flMap" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="65">
+            <include layout="@layout/row_google_map"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llLocationContainer" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="35">
+            <RelativeLayout android:id="@+id/rlStorePickUpLocation" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="50">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:weightSum="1" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/ivStoreLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:src="@drawable/ic_home" android:scaleType="fitXY"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_weight="0.75">
+                        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/txtStoreName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_store_location"/>
+                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="13sp" android:textColor="@android:color/black" android:layout_gravity="left" android:id="@+id/txtStoreAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text=""/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/llDriveStoreLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="37dp" android:layout_weight="0.25" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drive" android:alpha="0.7"/>
+                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="10sp" android:textColor="#7b878f" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/lbl_drive" android:textAllCaps="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llDivider" android:background="@color/gray_border" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.3dp" android:alpha="0.7"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="50">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:weightSum="1" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/ivCustomerLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:src="@drawable/ic_customer"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_weight="0.75">
+                        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/txtCustomerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_customer_location"/>
+                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="13sp" android:textColor="@android:color/black" android:layout_gravity="left" android:id="@+id/txtCustomerAdd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text=""/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/llDriveCustomerLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="37dp" android:layout_weight="0.25" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drive" android:alpha="0.7"/>
+                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="10sp" android:textColor="#7b878f" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/lbl_drive" android:textAllCaps="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_shadow_coupons_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:minWidth="@dimen/dp_120" android:layout_weight="1" android:layout_marginStart="@dimen/dp_16">
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/shops_title_text_gray" android:id="@+id/txtCouponType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Percentage Coupon" android:includeFontPadding="false"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_6">
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_10" android:textColor="@color/color_light_gray" android:id="@+id/txtValid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valid upto" android:includeFontPadding="false"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_10" android:textColor="@color/color_light_gray" android:id="@+id/txtDiscountValidity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12 feb 2017" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_5"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/sky_blue_color" android:id="@+id/txtAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100.0" android:includeFontPadding="false"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/sky_blue_color" android:id="@+id/txtAmountType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" SAR" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_3"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/dp_16">
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/sky_blue_color" android:id="@+id/txtCouponCode" android:background="@drawable/dotted_corner_sky_blue" android:padding="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D1235666" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

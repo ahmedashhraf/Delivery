@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_map_route" android:id="@+id/action_route" android:visible="false" android:orderInCategory="100" android:title="@string/menu_title_route" app:showAsAction="always"/>
+    <item android:id="@+id/action_start_tracking" android:visible="false" android:orderInCategory="100" android:title="@string/menu_start_tracking" app:showAsAction="never"/>
+    <item android:id="@+id/action_Choose_Photo" android:visible="false" android:orderInCategory="100" android:title="@string/menu_choose_photo" app:showAsAction="never"/>
+    <item android:id="@+id/action_cancel_order" android:visible="false" android:orderInCategory="100" android:title="@string/menu_cancel_order" app:showAsAction="never"/>
+    <item android:id="@+id/action_share_location" android:visible="false" android:orderInCategory="100" android:title="@string/menu_share_location" app:showAsAction="never"/>
+    <item android:id="@+id/action_change_courier" android:visible="false" android:orderInCategory="100" android:title="@string/menu_change_courier" app:showAsAction="never"/>
+    <item android:id="@+id/action_issue_bill" android:visible="false" android:orderInCategory="100" android:title="@string/title_issue_bill" app:showAsAction="never"/>
+    <item android:id="@+id/action_goods_delivered" android:visible="false" android:orderInCategory="100" android:title="@string/menu_goods_delivered" app:showAsAction="never"/>
+    <item android:id="@+id/action_withdraw_order" android:visible="false" android:orderInCategory="100" android:title="@string/menu_withdraw_order" app:showAsAction="never"/>
+    <item android:id="@+id/action_rate_the_courier" android:visible="false" android:orderInCategory="100" android:title="@string/menu_rate_the_Courier" app:showAsAction="never"/>
+    <item android:id="@+id/action_file_a_compaint" android:visible="false" android:orderInCategory="100" android:title="@string/title_file_a_compaint" app:showAsAction="never"/>
+    <item android:id="@+id/action_package_pickedup" android:visible="false" android:orderInCategory="100" android:title="@string/menu_package_pickedup" app:showAsAction="never"/>
+</menu>

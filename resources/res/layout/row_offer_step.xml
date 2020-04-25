@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/app_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_16" android:textColor="@color/package_title_text" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" android:minHeight="@dimen/dp_19" android:text="PICKUP" android:maxLines="1" android:includeFontPadding="false" android:textDirection="ltr"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_11" android:textColor="@color/alpha_gray_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvAddress" android:layout_width="@dimen/dp_108" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_10" android:minHeight="@dimen/dp_28" android:text="An Nuzhah\10Omar Ibn Khattab St." android:maxLines="2" android:includeFontPadding="false" android:textDirection="ltr"/>
+                </LinearLayout>
+                <View android:id="@+id/viewDivider" android:background="@color/divider_color" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_33" android:layout_marginStart="@dimen/dp_7"/>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+                <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/ivLeftDot" android:background="@drawable/line_dot" android:layout_width="@dimen/dp_50" android:layout_height="wrap_content"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/ivRightDot" android:background="@drawable/line_dot" android:layout_width="@dimen/dp_50" android:layout_height="wrap_content" android:scaleX="-1"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_10" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvDistance" android:background="@drawable/bg_pending_km" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_39" android:minHeight="@dimen/dp_13" android:text="2 km" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/dp_4" android:paddingEnd="@dimen/dp_4"/>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/bg_round_shadow_white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/ivIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_1" android:src="@drawable/ic_package_sky_blue" android:scaleType="centerInside"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

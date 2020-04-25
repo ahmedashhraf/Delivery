@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/White" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pgLoading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    <RelativeLayout android:id="@+id/rlContainer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/svMain" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1" android:layout_above="@+id/llBottomContainer" android:layout_alignParentTop="true" android:fadeScrollbars="false">
+            <LinearLayout android:orientation="vertical" android:id="@+id/llMain" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/llImCourier" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:gravity="center" android:layout_gravity="center" android:background="@color/shop_type_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:alpha="0.3"/>
+                    <LinearLayout android:orientation="horizontal" android:background="@color/White" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/layCheckIn" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1">
+                            <ImageView android:layout_gravity="center" android:id="@+id/imgIamCheckin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_check" android:layout_marginStart="@dimen/dp_6"/>
+                            <com.mrsool.customeview.CustomeTextViewSemiBold android:textColor="@color/shop_type_color" android:layout_gravity="center" android:id="@+id/txtIamCheckin" android:layout_margin="@dimen/dp_5" android:text="@string/lbl_i_m_courier" style="@style/CustomTitleLable"/>
+                        </LinearLayout>
+                        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_14" android:textColor="@color/shop_type_color" android:layout_gravity="center" android:id="@+id/txtCheckInCount" android:visibility="visible" android:layout_width="wrap_content" android:text="" style="@style/CustomTitleLable"/>
+                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_14" android:textColor="@color/shop_type_color" android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:text="@string/lbl_check_in" style="@style/CustomTitleLable"/>
+                    </LinearLayout>
+                    <View android:gravity="center" android:layout_gravity="center" android:background="@color/shop_type_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:alpha="0.3"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <LinearLayout android:orientation="horizontal" android:background="#fbfbfb" android:padding="@dimen/dp_12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <FrameLayout android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:layout_gravity="center" android:id="@+id/imgShopBg" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@drawable/round_app_icon"/>
+                                <ImageView android:layout_gravity="center" android:id="@+id/imgPkgIcon" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/icon_push_small"/>
+                            </FrameLayout>
+                            <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_15" android:textColor="#7d8a92" android:gravity="start" android:layout_gravity="center" android:id="@+id/txtPkgTitle" android:text="MRSOOL Customer Service" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="@dimen/dp_10" style="@style/CustomTitleLable"/>
+                        </LinearLayout>
+                        <ScrollView android:id="@+id/svDesc" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <FrameLayout android:id="@+id/flBannerContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants">
+                                    <ProgressBar android:layout_gravity="center" android:id="@+id/pgLoadImage" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20"/>
+                                    <com.jackandphantom.circularimageview.RoundedImage android:id="@+id/imgPkgInfo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_132" android:layout_marginTop="@dimen/dp_10" android:scaleType="centerCrop" android:layout_marginStart="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_18" app:rounded_radius="20"/>
+                                </FrameLayout>
+                                <RelativeLayout android:id="@+id/rlVideoTour" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_6">
+                                    <VideoView android:id="@+id/vVideoTour" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_132" android:layout_centerHorizontal="true"/>
+                                    <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+                                        <com.mrsool.customeview.TwitterVideoView.VideoView android:layout_gravity="center" android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="175dp" android:layout_centerHorizontal="true"/>
+                                        <ImageView android:layout_gravity="center" android:id="@+id/ivVideoThumb" android:layout_width="match_parent" android:layout_height="175dp" android:layout_centerHorizontal="true"/>
+                                        <ProgressBar android:layout_gravity="center" android:id="@+id/video_progress_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                                        <com.mrsool.customeview.TwitterVideoView.VideoControlView android:layout_gravity="bottom" android:id="@+id/video_control_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                                        <TextView android:textSize="@dimen/tw__text_size_medium" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/call_to_action_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                                    </RelativeLayout>
+                                    <ImageView android:id="@+id/ivVideoTourPlay" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@drawable/ic_play_circle_outline_24dp" android:tint="@color/white" android:layout_centerInParent="true"/>
+                                    <ProgressBar android:layout_gravity="center" android:id="@+id/pgvideoplay" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+                                </RelativeLayout>
+                                <com.mrsool.utils.ReadMoreTextView android:textSize="@dimen/sp_13" android:textColor="#808b94" android:id="@+id/txtPkgDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="Inspiring and nurturing the human spirit - one person, one cup, one neighborhood at a time" android:layout_marginStart="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_18"/>
+                            </LinearLayout>
+                        </ScrollView>
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llCustomerReviews" android:background="?attr/selectableItemBackground" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:minHeight="@dimen/dp_56" android:importantForAccessibility="yes" android:paddingStart="@dimen/dp_18" android:paddingEnd="@dimen/dp_18">
+                            <include layout="@layout/layout_reviews"/>
+                        </LinearLayout>
+                        <include layout="@layout/layout_branch"/>
+                        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_working_hours"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/llMenuContainer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_18">
+                                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/shops_title_text_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/sp_16" android:text="@string/lbl_menu" android:includeFontPadding="false"/>
+                                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1" android:src="@drawable/ic_arrow_menu_down" android:layout_marginStart="@dimen/dp_7"/>
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rvMenu" android:background="@color/white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:layout_marginBottom="@dimen/dp_5" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_8" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/White" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_134">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/layShopOrderTypeColor1" android:background="@color/order_color_yello" android:visibility="visible" android:layout_width="@dimen/dp_6" android:layout_height="match_parent"/>
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_10">
+                        <LinearLayout android:id="@+id/llDiscountTag1" android:background="@drawable/ic_discount_tag_large" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12">
+                            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/tvdiscount1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" android:text="200.0 % OFF on delivery upto 15.0 SAR" android:maxLines="1" android:layout_marginStart="@dimen/dp_25" android:layout_marginEnd="@dimen/dp_13"/>
+                        </LinearLayout>
+                        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_18" android:textColor="@color/apptheme_color" android:layout_gravity="start" android:id="@+id/txtPkgSubTitle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MRSOOL Service" android:singleLine="true"/>
+                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_14" android:textColor="@color/shop_type_color" android:layout_gravity="start" android:id="@+id/txtPkgAddress1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="(Opposite Riyadh Gallery)\10Al Riyadh, Province" android:maxLines="4" android:layout_marginEnd="@dimen/dp_85"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llBottomContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/iOrderNow">
+            <View android:id="@+id/vDivider2" android:background="@color/bg_drop_off" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_18"/>
+        </LinearLayout>
+        <include android:layout_gravity="bottom" android:id="@+id/iOrderNow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/layout_order_now"/>
+    </RelativeLayout>
+</FrameLayout>

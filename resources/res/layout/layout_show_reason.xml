@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_18" android:textColor="@color/text_color_5b" android:gravity="center" android:id="@+id/tvMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/msg_do_you_want_to_delete_order" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_24"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvReasons" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_32" android:layout_weight="1" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_24"/>
+    <View android:background="#1a7a858c" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dp_32"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/search_text_gray" android:gravity="center" android:id="@+id/tvNegative" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="@dimen/dp_54" android:text="@string/lbl_me_cancel" android:layout_weight="1" android:textAllCaps="true"/>
+        <View android:background="#1a7a858c" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/red_lite_2" android:gravity="center" android:id="@+id/tvPositive" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="@dimen/dp_54" android:text="@string/lbl_delete" android:layout_weight="1" android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>

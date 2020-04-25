@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/flToolBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_56">
+    <include android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" layout="@layout/view_back_arrow_round"/>
+    <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_18" android:textColor="@color/color_title_text" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:singleLine="true"/>
+    <View android:id="@+id/focus_thief" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1dp" android:layout_height="1dp"/>
+</FrameLayout>

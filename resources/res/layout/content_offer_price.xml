@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/llMain" android:padding="@dimen/dp_25" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_24" android:textColor="@color/sky_blue_color" android:gravity="center" android:id="@+id/tvTitle" android:paddingBottom="@dimen/dp_25" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explain Price?"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/ivImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_25" android:layout_weight="1">
+            <com.mrsool.customeview.CustomeTextViewRobotoLight android:textSize="@dimen/sp_17" android:textColor="@color/text_color_7a" android:gravity="center_horizontal" android:id="@+id/tvDesc" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The prices you see in this area shows the\10range where you can submit your offer where 13 SAR is the minimum for the order where the other price show that last offer was submitted to this order"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

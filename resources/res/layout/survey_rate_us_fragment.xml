@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/instabug_survey_dialog_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <include layout="@layout/layout_shadow"/>
+        <RelativeLayout android:orientation="vertical" android:background="?attr/survey_container_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/item_close_survey_button"/>
+            <RelativeLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/instabug_img_thanks" android:background="@drawable/ic_thanks_background" android:layout_width="@dimen/survey_rate_us_image_height" android:layout_height="@dimen/survey_rate_us_image_height" android:layout_marginTop="16dp" android:src="@drawable/ic_survey_thankyou" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="@dimen/survey_rate_us_title_text_size" android:gravity="center" android:id="@+id/txt_rate_us_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/instabug_survey_thanks_title" android:layout_below="@+id/instabug_img_thanks" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="@dimen/survey_rate_us_subTitle_text_size" android:textStyle="normal" android:textColor="?attr/survey_nps_numbers_color" android:gravity="center" android:id="@+id/txt_rate_us_question" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/txt_rate_us_title"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

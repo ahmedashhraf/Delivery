@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/bottomSheet" android:background="@color/white" android:padding="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="59">
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_20" android:textColor="@color/sky_blue_color" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_expiration_date"/>
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/shops_title_text_gray" android:id="@+id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="You Should be able to find this date under the card number, on the front side "/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:layout_gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="41">
+            <ImageView android:layout_gravity="end" android:id="@+id/ivDemoImage" android:layout_width="@dimen/dp_113" android:layout_height="@dimen/dp_71" android:src="@drawable/img_card_exp_date" android:scaleType="fitXY"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton android:textSize="@dimen/sp_18" android:gravity="center" android:id="@+id/btnOk" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:minHeight="@dimen/dp_48" android:text="@string/lbl_okay_cap" android:includeFontPadding="false" android:insetTop="@dimen/dp_0" android:insetBottom="@dimen/dp_0" android:textAllCaps="false" android:fontFamily="@font/roboto_medium" android:letterSpacing="0" app:backgroundTint="@color/sky_blue_color" app:cornerRadius="@dimen/dp_4"/>
+</LinearLayout>

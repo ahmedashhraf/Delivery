@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <tab icon="@drawable/menu_shop" id="@+id/bTabShop" title="@string/lbl_btab_shops"/>
+    <tab icon="@drawable/menu_myorder" id="@+id/bTabOrder" title="@string/lbl_btab_order"/>
+    <tab icon="@drawable/menu_me" id="@+id/bTabMe" title="@string/lbl_btab_me"/>
+    <tab icon="@drawable/menu_notification" id="@+id/bTabNotification" title="@string/lbl_btab_notification"/>
+</tabs>

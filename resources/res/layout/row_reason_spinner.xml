@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_14" android:textColor="#7d8a92" android:id="@+id/txtTitle" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reason"/>
+</LinearLayout>

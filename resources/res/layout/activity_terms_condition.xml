@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_title_bar"/>
+        <WebView android:id="@+id/wvTermsService" android:padding="@dimen/dp_10" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/dummy_text"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pgComplaint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+</RelativeLayout>

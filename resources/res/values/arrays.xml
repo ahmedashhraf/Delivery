@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="av_colors">
+        <item>@color/av_color4</item>
+        <item>@color/av_color3</item>
+        <item>@color/av_color2</item>
+        <item>@color/av_color1</item>
+    </array>
+    <array name="intro_desc_array">
+        <item>All places in one place! Choose store from the list or use Search Option!</item>
+        <item>Place your order by clicking on &apos;Order Now, and you can work as a coureir by clicking on i&apos;m a Courier.</item>
+        <item>Accept best offer for your order!</item>
+        <item>Chat with your courier to explain further details and to stay informed of the status of your order!</item>
+        <item>Do you want to see the app in action? Click on the video above!</item>
+    </array>
+    <array name="intro_desc_array_new">
+        <item>All places in one place! Choose store from the list or use Search Option!</item>
+        <item>Accept best offer for your order!</item>
+        <item>Chat with your courier to explain further details and to stay informed of the status of your order!</item>
+        <item>Place your order by clicking on &apos;Order Now&apos;, and you can work as a coureir by clicking on I&apos;m a Courier.</item>
+    </array>
+    <array name="intro_images">
+        <item>@drawable/intro_1</item>
+        <item>@drawable/intro_2</item>
+        <item>@drawable/intro_3</item>
+        <item>@drawable/intro_4</item>
+        <item>@drawable/intro_5</item>
+    </array>
+    <array name="intro_images_new">
+        <item>@drawable/intro_1_new</item>
+        <item>@drawable/intro_2_new</item>
+        <item>@drawable/intro_3_new</item>
+        <item>@drawable/intro_4_new</item>
+    </array>
+    <array name="intro_title_array">
+        <item>Welcome to MRSOOL</item>
+        <item>Order Easily</item>
+        <item>Best Prices</item>
+        <item>Live Chat</item>
+        <item>App In Action</item>
+    </array>
+    <array name="intro_title_array_new">
+        <item>Welcome\10to MRSOOL</item>
+        <item>BEST\10PRICES</item>
+        <item>DIRECT\10COMMUNICATION</item>
+        <item>TRACK YOUR\10ORDER</item>
+    </array>
+    <array name="names">
+        <item>@string/rate_value_1</item>
+        <item>@string/rate_value_2</item>
+        <item>@string/rate_value_3</item>
+        <item>@string/rate_value_4</item>
+        <item>@string/rate_value_5</item>
+    </array>
+    <array name="time_array">
+        <item>1 HOUR</item>
+        <item>2 HOURS</item>
+        <item>3 HOURS</item>
+        <item>1 Day</item>
+        <item>2 Days</item>
+        <item>3 Days</item>
+        <item>1 Week</item>
+        <item>2 Weeks</item>
+        <item>3 Weeks</item>
+    </array>
+    <array name="time_value_array">
+        <item>1:H</item>
+        <item>2:H</item>
+        <item>3:H</item>
+        <item>1:D</item>
+        <item>2:D</item>
+        <item>3:D</item>
+        <item>1:W</item>
+        <item>2:W</item>
+        <item>3:W</item>
+    </array>
+</resources>

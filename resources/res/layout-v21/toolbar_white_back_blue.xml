@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_56" android:elevation="0dp" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/AppTheme.PopupOverlay1" app:theme="@style/ToolbarTheme">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/flBack" android:layout_width="40dp" android:layout_height="40dp">
+                <View android:background="@drawable/bg_white" android:layout_width="40dp" android:layout_height="40dp" android:alpha="0.1"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgClose" android:background="@drawable/bg_sky_blue_ripple_40" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/back_white" android:scaleType="center" android:tint="@color/sky_blue_color"/>
+            </FrameLayout>
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/text_color_5b" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/txtTitle" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_8" style="@style/CustomHeaderLable"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

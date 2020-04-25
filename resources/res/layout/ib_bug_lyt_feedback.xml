@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/InstabugBaseContainer">
+    <ScrollView android:scrollbarStyle="insideOverlay" android:id="@+id/ib_bug_scroll_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60dp">
+        <LinearLayout android:orientation="vertical" android:background="?attr/instabug_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:id="@+id/instabug_edit_text_email" android:hint="@string/instabug_str_email_hint" android:singleLine="true" android:inputType="textEmailAddress" style="@style/InstabugEditTextStyle"/>
+            <View android:background="?attr/instabug_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <EditText android:id="@+id/instabug_edit_text_message" android:inputType="none|text|textCapSentences|textAutoCorrect|textMultiLine" style="@style/InstabugEditTextStyle"/>
+            <View android:background="?attr/instabug_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <TextView android:textColor="?attr/instabug_theme_hint_text_color" android:id="@+id/instabug_text_view_disclaimer" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/InstabugEditTextStyle"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/instabug_lyt_attachments_list" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ib_bug_attachments_action_bar"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

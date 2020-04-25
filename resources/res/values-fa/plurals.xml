@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="instabug_feature_rq_str_days_ago">
+        <item quantity="one">%d روز قبل</item>
+        <item quantity="other">%d روز قبل</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_hours_ago">
+        <item quantity="one">%d ساعت قبل</item>
+        <item quantity="other">%d ساعت قبل</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_minutes_ago">
+        <item quantity="one">%d دقیقه قبل</item>
+        <item quantity="other">%d دقیقه قبل</item>
+    </plurals>
+</resources>

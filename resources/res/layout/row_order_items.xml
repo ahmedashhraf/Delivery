@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llMain" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_15">
+            <com.mrsool.customeview.CustomeEditTextRobotoRegular android:textColor="@color/search_text_gray_lite" android:textColorHint="@color/search_text_gray_lite" android:gravity="center" android:id="@+id/etIndex" android:background="@color/transparent" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_0" android:layout_width="40dp" android:layout_height="@dimen/dp_55" android:text="1" android:hint="@string/lbl_qty" android:selectAllOnFocus="true" android:maxLength="2" android:inputType="number" android:layout_marginEnd="@dimen/dp_16" style="@style/CustomEditTextBlack"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.mrsool.customeview.CustomeEditTextRobotoRegular android:textColor="@color/shops_title_text_gray" android:textColorHint="@color/search_text_gray_lite" android:gravity="center_vertical" android:id="@+id/etDetail" android:background="@color/transparent" android:paddingTop="@dimen/dp_0" android:paddingBottom="@dimen/dp_0" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:hint="@string/lbl_add_item" android:inputType="textNoSuggestions" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_40" style="@style/CustomEditTextBlack"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/ivDelete" android:padding="@dimen/dp_10" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_delete" android:tint="@color/sky_blue_color"/>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@+id/viewPadding" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_0"/>
+    </LinearLayout>
+</LinearLayout>

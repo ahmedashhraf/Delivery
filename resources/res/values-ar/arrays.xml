@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="intro_desc_array">
+        <item>كل الأماكن في مكان واحد، اختر متجرك مباشرة من القائمة، أو استخدم خيار البحث!</item>
+        <item>ضع طلبك باختيار &apos;اطلب الآن&apos;، وبإمكانك توصيل الطلبات عن طريق اختيار&apos;سجلني كموصل&apos;</item>
+        <item>قم بقبول العروض الأفضل لطلبك!</item>
+        <item>هل تريد مشاهدة التطبيق في عرض فيديو؟ تفضل بالضغط على زر التشغيل بالأعلى.</item>
+        <item>تحدث مع الموصل مباشرة من خلال التطبيق عن أي تفاصيل إضافية، وللتعرف على حالة الطلب بشكل مباشر!</item>
+    </array>
+    <array name="intro_desc_array_new">
+        <item>كل الأماكن في مكان واحد، اختر متجرك مباشرة من القائمة، أو استخدم خيار البحث!</item>
+        <item>قم بقبول العروض الأفضل لطلبك!</item>
+        <item>تحدث مع الموصل مباشرة من خلال التطبيق عن أي تفاصيل إضافية، وللتعرف على حالة الطلب بشكل مباشر!</item>
+        <item>ضع طلبك باختيار &apos;اطلب الآن&apos;، وبإمكانك توصيل الطلبات عن طريق اختيار&apos;سجلني كموصل&apos;</item>
+    </array>
+    <array name="intro_images">
+        <item>@drawable/intro_1</item>
+        <item>@drawable/intro_2</item>
+        <item>@drawable/intro_3</item>
+        <item>@drawable/intro_4</item>
+        <item>@drawable/intro_5</item>
+    </array>
+    <array name="intro_title_array">
+        <item>أهلا بك في مرسول</item>
+        <item>اطلب بسهولة</item>
+        <item>أفضل الأسعار</item>
+        <item>محادثة مباشرة</item>
+        <item>عرض حي</item>
+    </array>
+    <array name="intro_title_array_new">
+        <item>أهلا بك\10في مرسول</item>
+        <item>أفضل\10الأسعار</item>
+        <item>كن على اتصال</item>
+        <item>تتبع طلبك</item>
+    </array>
+    <array name="names">
+        <item>@string/rate_value_1</item>
+        <item>@string/rate_value_2</item>
+        <item>@string/rate_value_3</item>
+        <item>@string/rate_value_4</item>
+        <item>@string/rate_value_5</item>
+    </array>
+    <array name="time_array">
+        <item>1 ساعة</item>
+        <item>2 ساعة</item>
+        <item>3 ساعات</item>
+        <item>1 يوم</item>
+        <item>2 أيام</item>
+        <item>3 أيام</item>
+        <item>1 أسبوع</item>
+        <item>2 أسابيع</item>
+        <item>3 أسابيع</item>
+    </array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/llMain" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_3">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <p438de.hdodenhof.circleimageview.CircleImageView android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@color/text_color_7b"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ivCategory" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" app:srcCompat="@drawable/ic_home_icon"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_10">
+        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_12" android:textColor="@color/search_text_gray" android:gravity="start" android:id="@+id/tvBookMarkName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_19" android:text="@string/lbl_select_time"/>
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/shops_title_text_gray" android:ellipsize="end" android:gravity="start" android:id="@+id/tvLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_14" android:text="@string/lbl_select_time" android:maxLines="2"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivDelete" android:background="?attr/actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" app:srcCompat="@drawable/ic_remove_location"/>
+</LinearLayout>

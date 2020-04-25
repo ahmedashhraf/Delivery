@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:id="@+id/llContainerMain" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.booking.rtlviewpager.RtlViewPager android:layout_gravity="bottom" android:id="@+id/viewPager" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.viewpagerindicator.CirclePageIndicator android:layout_gravity="center" android:id="@+id/pagerIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_40" android:paddingStart="10dp" android:paddingEnd="10dp" app:fillColor="@color/indicator_fill" app:pageColor="@color/indicator_default" app:radius="5dp" app:snap="false" app:strokeColor="@android:color/transparent"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_25">
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:id="@+id/btnGotIt" android:layout_height="@dimen/dp_35" android:minWidth="@dimen/dp_98" android:text="@string/lbl_next" style="@style/ButtonSmall"/>
+            <ImageView android:id="@+id/ivNext" android:background="@drawable/bg_ripple_32" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/btnGotIt" android:layout_alignBottom="@+id/btnGotIt" android:layout_alignStart="@+id/btnNext" android:layout_alignEnd="@+id/btnGotIt"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

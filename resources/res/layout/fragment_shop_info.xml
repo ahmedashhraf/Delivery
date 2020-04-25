@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/llContainerMain" android:background="@color/light_gray_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pgLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    <RelativeLayout android:id="@+id/rlContainer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llBottomContainer">
+            <RelativeLayout android:id="@+id/rlMap" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_45">
+                <include android:layout_gravity="0" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/row_google_map"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabMapStyle" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_16" android:src="@drawable/ic_map_stlye" android:scaleType="center" android:layout_above="@+id/fabMylocation" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" app:backgroundTint="@color/White" app:elevation="6dp" app:fabSize="1"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabMylocation" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_16" android:src="@drawable/ic_my_location_gray_24dp" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" app:backgroundTint="@color/White" app:elevation="6dp" app:fabSize="1"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/llOpenTiming" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llTodayTiming" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/dp_13" android:paddingBottom="@dimen/dp_13" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_20">
+                    <ImageView android:id="@+id/ivLocation" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ic_time" android:scaleType="fitXY"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_16" android:textColor="@color/apptheme_color" android:id="@+id/tvOpenClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open" android:layout_weight="1" android:layout_marginStart="@dimen/dp_10"/>
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="@color/sky_blue_color" android:id="@+id/tvTodaysTime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_show_working_hours" android:layout_marginEnd="@dimen/dp_3"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivDownUpHours" android:visibility="visible" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_9" android:src="@drawable/ic_up_skyblue" android:layout_marginStart="@dimen/dp_3" android:layout_marginEnd="@dimen/dp_18"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout android:orientation="vertical" android:id="@+id/expWorkingHours" android:layout_width="match_parent" android:layout_height="wrap_content" app:ael_expanded="false" app:ael_interpolator="5" app:ael_orientation="1">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/White" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:id="@+id/llWorkingHoursMonThurs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_33" android:layout_marginBottom="@dimen/dp_3" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_33"/>
+                        </LinearLayout>
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llBottomContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/iOrderNow">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_2" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20">
+                <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/ivLocationTemp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_sky_blue_snall" android:layout_alignParentStart="true"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_13" android:textColor="@color/shops_title_text_gray" android:id="@+id/tvDistanceAway" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.3 Km Away" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_4" android:layout_toEndOf="@+id/ivLocationTemp"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_13" android:textColor="@color/search_text_gray" android:id="@+id/tvShopAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1005,Spaceo Technologies," android:layout_below="@+id/tvDistanceAway" android:layout_marginEnd="@dimen/dp_10" android:layout_alignStart="@+id/tvDistanceAway"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:layout_gravity="bottom" android:id="@+id/iOrderNow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/layout_order_now"/>
+    </RelativeLayout>
+</FrameLayout>

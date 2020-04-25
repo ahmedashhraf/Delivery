@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/light_gray_5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_title_bar_accent_search"/>
+    <EditText android:id="@+id/country_code_picker_search" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:hint="@string/search" android:maxLines="1" android:drawableStart="@drawable/ic_search" app:drawableStartCompat="@drawable/ic_search"/>
+    <ListView android:id="@+id/country_code_picker_listview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_weight="1"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCountry" android:visibility="gone" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.futuremind.recyclerviewfastscroll.FastScroller android:orientation="vertical" android:id="@+id/fastscroll" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layoutDirection="ltr" app:fastscroll__bubbleColor="@color/sky_blue_color" app:fastscroll__bubbleTextAppearance="@style/StyledScrollerTextAppearance" app:fastscroll__handleColor="@color/sky_blue_color"/>
+    </RelativeLayout>
+</LinearLayout>

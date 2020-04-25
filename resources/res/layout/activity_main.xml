@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llContainerMain" android:background="@color/app_bg_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/llTerms" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="471">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="860"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/imgLogo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mrsool_logo_small"/>
+                    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="604"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:layout_gravity="center" android:id="@+id/txtGuestUser" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_hi_guest"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center" android:id="@+id/rlFacebook" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+                    <LinearLayout android:id="@+id/llLoginWithFacebook" android:background="@drawable/bg_facebook_login_32" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_48">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="25dp" android:layout_height="30dp" android:src="@drawable/ic_facebook_logo" android:scaleType="center" android:layout_marginStart="@dimen/dp_16"/>
+                        <View android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" style="@style/ShadowVertical"/>
+                        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/txtFacebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_login_with_facebook" android:maxLines="1" android:layout_marginEnd="@dimen/dp_10"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imgLoginWithFacebook" android:background="@drawable/bg_ripple_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/llLoginWithFacebook" android:layout_alignBottom="@+id/llLoginWithFacebook" android:layout_alignStart="@+id/llLoginWithFacebook" android:layout_alignEnd="@+id/llLoginWithFacebook"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center" android:id="@+id/rlGoogle" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+                    <LinearLayout android:id="@+id/llLoginWithGoogle" android:background="@drawable/bg_google_login_32" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_48">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="25dp" android:layout_height="30dp" android:src="@drawable/ic_google_logo" android:scaleType="center" android:layout_marginStart="@dimen/dp_16"/>
+                        <View android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" style="@style/ShadowVertical"/>
+                        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/txtGoogle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_login_with_google" android:maxLines="1" android:layout_marginEnd="@dimen/dp_10"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imgLoginWithGoogle" android:background="@drawable/bg_ripple_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/llLoginWithGoogle" android:layout_alignBottom="@+id/llLoginWithGoogle" android:layout_marginStart="0dp" android:layout_alignStart="@+id/llLoginWithGoogle" android:layout_alignEnd="@+id/llLoginWithGoogle"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/llOr" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:layout_marginBottom="@dimen/dp_24" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+                    <View android:layout_width="0dp" android:layout_weight="1" style="@style/DividerHorizontal"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/text_color_7a" android:layout_gravity="center" android:id="@+id/txtOr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_or_small" android:textAllCaps="false" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20"/>
+                    <View android:layout_width="0dp" android:layout_weight="1" style="@style/DividerHorizontal"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_gravity="center" android:id="@+id/rlMobile" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+                    <LinearLayout android:id="@+id/llLoginWithMobile" android:background="@drawable/bg_sky_blue_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_48">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="25dp" android:layout_height="30dp" android:src="@drawable/ic_phone_login" android:scaleType="center" android:layout_marginStart="@dimen/dp_16"/>
+                        <View android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" style="@style/ShadowVertical"/>
+                        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/txtMobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_login_with_mobile" android:maxLines="1"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imgLoginWithMobile" android:background="@drawable/bg_ripple_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/llLoginWithMobile" android:layout_alignBottom="@+id/llLoginWithMobile" android:layout_alignStart="@+id/llLoginWithMobile" android:layout_alignEnd="@+id/llLoginWithMobile"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llSkip" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="155">
+                <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="42"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/text_color_7a" android:layout_gravity="center" android:id="@+id/txtSkip" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_skip" android:maxLines="1"/>
+                <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="21"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llTerms" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20" style="@style/DividerHorizontal"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/text_color_7b" android:textColorLink="@color/sky_blue_color" android:id="@+id/txtTerms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_by_using_this_app" android:maxLines="1" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20"/>
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/colorAccent" android:id="@+id/txtTermsAndCondition" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:text="@string/lbl_terms_condition"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

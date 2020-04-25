@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:duration="@integer/label_anim_time" android:fromAlpha="0" android:toAlpha="1"/>
+    <translate android:duration="@integer/label_anim_time" android:fromYDelta="50" android:toYDelta="0"/>
+    <scale android:duration="@integer/label_anim_time" android:fromXScale="1.1" android:toXScale="1" android:fromYScale="1.1" android:toYScale="1"/>
+</set>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llMain" android:background="@drawable/marker_bg_new_small" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_13" android:textColor="@color/Black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_150" android:text="12345678901234567890123456789" android:maxLines="1" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <com.jackandphantom.circularimageview.CircleImage android:id="@+id/ivPin" android:visibility="visible" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_35" android:src="@drawable/icon_home_pickup" android:scaleType="center" android:layout_below="@+id/llMain" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

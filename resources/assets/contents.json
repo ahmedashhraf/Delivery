@@ -1,0 +1,107 @@
+{
+  "android_play_store_link": "",
+  "ios_app_store_link": "",
+  "sticker_packs": [
+    {
+      "identifier": "1",
+      "name": "Mrsool",
+      "publisher": "Mrsool",
+      "tray_image_file": "logo.png",
+      "publisher_email":"",
+      "publisher_website": "",
+      "privacy_policy_website": "",
+      "license_agreement_website": "",
+      "stickers": [
+        {
+          "image_file": "st_1.webp",
+          "emojis": ["☕","🙂"]
+        },
+        {
+          "image_file": "st_2.webp",
+          "emojis": ["😄","😀"]
+        },
+        {
+          "image_file": "st_3.webp",
+          "emojis": ["😆","😂"]
+        },
+        {
+          "image_file": "st_4.webp",
+          "emojis": ["😩","😰"]
+        },
+        {
+          "image_file": "st_5.webp",
+          "emojis": ["😭","💧"]
+        },
+        {
+          "image_file": "st_6.webp",
+          "emojis": ["😍","♥"]
+        },
+        {
+          "image_file": "st_7.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "st_8.webp",
+          "emojis": ["😍","💑"]
+        },
+        {
+          "image_file": "st_9.webp",
+          "emojis": ["😘","🍪"]
+        },
+        {
+          "image_file": "st_10.webp",
+          "emojis": ["🤔","😐"]
+        },
+        {
+          "image_file": "st_11.webp",
+          "emojis": ["😱","😵"]
+        },
+        {
+          "image_file": "st_12.webp",
+          "emojis": ["😡","😠"]
+        },
+        {
+          "image_file": "st_13.webp",
+          "emojis": ["❓","🤔"]
+        },
+        {
+          "image_file": "st_14.webp",
+          "emojis": ["🌈","😜"]
+        },
+        {
+          "image_file": "st_15.webp",
+          "emojis": ["💻","😩"]
+        },
+        {
+          "image_file": "st_16.webp",
+          "emojis": ["😡","😤"]
+        },
+        {
+          "image_file": "st_17.webp",
+          "emojis": ["😩","😨"]
+        },
+        {
+          "image_file": "st_18.webp",
+          "emojis": ["💻","🌃"]
+        },
+        {
+          "image_file": "st_19.webp",
+          "emojis": ["🎉","✨"]
+        },
+        {
+          "image_file": "st_20.webp",
+          "emojis": ["🤮","👎"]
+        },
+        {
+          "image_file": "st_21.webp",
+          "emojis": ["🖐","🙋"]
+        },
+        {
+          "image_file": "st_22.webp",
+          "emojis": ["🖐","👋"]
+        }
+
+      ]
+    }
+  ]
+}

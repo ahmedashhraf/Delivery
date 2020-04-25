@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="585303543" android:versionName="2.0.17" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.mrsool" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/app_icon" android:name="com.mrsool.utils.AppSingleton" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:theme="@style/PromoOfferTheme" android:name="com.mrsool.shop.PromotionalOfferActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="mrsool" android:host="open"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="mrsool" android:host="open"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="mrsool.co"/>
+                <data android:scheme="https" android:host="mrsool-test.app.link"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.ChangeLanguageActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:parentActivityName="com.mrsool.SplashActivity"/>
+        <activity android:name="com.mrsool.StartActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.StartActivityNew" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.p409me.UserFeedbackActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.p409me.LanguageChangeActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.p409me.EditProfileActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.complaint.MyFiledCOmplaint" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.p409me.NotificationSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.mrsool.p409me.SettingsActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.mrsool.p409me.TermsOfServiceActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/PromoOfferTheme1" android:name="com.mrsool.payment.Payment3DSecureWebviewActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.mrsool.chat.AdvanceWebviewActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/com_facebook_activity_theme" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.mrsool.auth.GplusLoginActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.mrsool.auth.FBLoginActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/HomeTheme" android:name="com.mrsool.stores.SearchStoresActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.auth.LoginWithPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.auth.ConfirmationOTPActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.MainActivity" android:screenOrientation="portrait" android:configChanges="fontScale"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.countrypicker.activity.CountryPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.auth.ProfileActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.mrsool.WebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/TakeImages" android:name="com.mrsool.utils.TakeImages"/>
+        <activity android:name="com.mrsool.offer.OfferOrderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.mrsool.chat.ShareLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.chat.ShowLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.createorder.PicOrderLocationActivityRevised" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Theme.OrderLocation" android:label="" android:name="com.mrsool.createorder.PicOrderLocationActivityRevisedOrder" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.mrsool.shop.ViewLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mrsool.chat.ViewPhotoFullActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.mrsool.shop.ViewVideoFullActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.order.ChangeCourierActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.order.FileComplainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.mrsool.complaint.ComplaintDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.shop.ShopDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.shop.ShopDetailPackageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mrsool.coupon.MyCouponsActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.HomeActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.TestBaseRatingActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.chat.ChatActivityNew" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/checkout_ui_callback_scheme"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/callback_scheme" android:host="@string/callback_host"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.chat.HyperPayPaymentReceiptActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.mrsool.payment.AddCardActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.mrsool.p409me.PaymentMethodListActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.mrsool.payment.AvailablePaymentMethodActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.TermsAndConditionActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/AppThemeSameColor" android:name="com.mrsool.CreateBillActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" android:name="com.mrsool.shop.AnnouncementActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/Base.Theme.AppCompat" android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.p409me.PaymentMethodActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.coupon.AddNewCouponActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.createorder.OrderSentActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <receiver android:name="com.mrsool.chat.BootCompletedIntentReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mrsool.utils.ConnectivityChange.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mrsool.utils.push.NotificationReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.mrsool.socket.LocationService"/>
+        <service android:name="com.mrsool.utils.push.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/app_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.mrsool.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_path"/>
+        </provider>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_opz7HuWuT3F8JGphr0W6sjkfBxdedqCj"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_nnv6KzWvQ9q9TUmcRplb0kjfrucdfDux"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="io.branch.sdk.auto_link_path" android:value="coupons/"/>
+        <receiver android:name="p212io.branch.referral.InstallListener" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.stickers.StickersActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:label="@string/title_activity_sticker_packs_list" android:name="com.mrsool.stickers.StickerPackListStickerActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.stickers.StickerPackDetailsStickerActivity" android:parentActivityName="com.mrsool.stickers.StickerPackListStickerActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.mrsool.stickers.StickerPackListStickerActivity"/>
+        </activity>
+        <activity android:theme="@style/CreateOrderTheme" android:label="@string/title_activity_sticker_pack_info" android:name="com.mrsool.stickers.StickerPackInfoStickerActivity" android:screenOrientation="portrait" android:parentActivityName="com.mrsool.stickers.StickerPackDetailsStickerActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.mrsool.stickers.StickerPackDetailsStickerActivity"/>
+        </activity>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.createorder.CreateOrderActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.createorder.BranchesActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.review.ServiceReviewListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.review.UserReviewListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.shopmenu.MenuOrderActivityStep1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.shopmenu.MenuOrderActivityStep2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/CustomCheckoutTheme" android:name="com.oppwa.mobile.connect.checkout.dialog.CheckoutActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.mrsool.shopmenu.AddServiceMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CreateOrderTheme" android:name="com.mrsool.shop.PendingOrdersActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.mrsool.stickers.StickerContentProvider" android:readPermission="com.whatsapp.sticker.READ" android:enabled="true" android:exported="true" android:authorities="com.mrsool.stickercontentprovider"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_login_protocol_scheme"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_app_key"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="59697159c20ceff78fc5cb7e4e4c5e4e2790369c"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/app_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_opz7HuWuT3F8JGphr0W6sjkfBxdedqCj"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_nnv6KzWvQ9q9TUmcRplb0kjfrucdfDux"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="io.branch.sdk.auto_link_path" android:value="coupons/"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="@string/clevertap_account_id"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="@string/clevertap_account_token"/>
+        <meta-data android:name="CLEVERTAP_USE_GOOGLE_AD_ID" android:value="1"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:name="com.clevertap.android.sdk.CTPushNotificationReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.mrsool.utils.push.NotificationReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="p212io.branch.referral.InstallListener" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.clevertap.android.sdk.CTPushNotificationReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.mrsool.socket.LocationService"/>
+        <service android:name="com.mrsool.utils.push.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.oppwa.mobile.connect.service.ConnectService" android:exported="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:name="com.mrsool.utils.ConnectivityChange.NetworkSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <activity android:theme="@style/Theme.AppCompat" android:name="cafe.adriel.androidaudiorecorder.AudioRecorderActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <activity android:theme="@style/InstabugTranslucentSdkTheme" android:name="com.instabug.survey.p400ui.SurveyActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.survey.network.service.InstabugSurveysSubmitterService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.crash.network.InstabugCrashesUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:theme="@style/InstabugSdkTheme" android:name="com.instabug.bug.view.BugReportingActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:scheme="instabug-bug" android:host="instabug-disclaimer.com"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.instabug.bug.network.InstabugBugsUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.bug.view.actionList.service.ReportCategoriesService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:theme="@style/InstabugSdkTheme" android:name="com.instabug.chat.p361ui.ChatActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.chat.network.InstabugMessageUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.chat.network.InstabugPushNotificationTokenService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.instabug.featuresrequest.p373ui.FeaturesRequestActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.featuresrequest.network.service.FeaturesRequestVoteService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.library.network.worker.uploader.InstabugSessionUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.library.internal.video.VideoProcessingService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.library.analytics.network.InstabugAnalyticsUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.instabug.library.internal.video.RequestPermissionActivity"/>
+        <activity android:theme="@style/InstabugTranslucentSdkTheme" android:name="com.instabug.library.invocation.invocationdialog.InstabugDialogActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/InstabugTranslucentSdkTheme" android:name="com.instabug.library.p397ui.onboarding.OnboardingActivity" android:launchMode="singleTask"/>
+        <service android:name="com.instabug.library.internal.video.AutoScreenRecordingService"/>
+        <receiver android:name="com.clevertap.android.sdk.InstallReferrerBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:configChanges="keyboardHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" android:name="com.clevertap.android.sdk.CTInboxActivity" android:configChanges="keyboardHidden"/>
+        <service android:name="com.clevertap.android.sdk.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.clevertap.android.sdk.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="com.mrsool.crashlyticsinitprovider" android:initOrder="90"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:enabled="false" android:exported="false" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:enabled="false" android:exported="false" android:process=":playcore_dialog_wrapper_activity" android:stateNotNeeded="true"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.mrsool.firebaseinitprovider" android:initOrder="100"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <provider android:name="com.facebook.marketing.internal.MarketingInitProvider" android:exported="false" android:authorities="com.mrsool.MarketingInitProvider"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.mrsool.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

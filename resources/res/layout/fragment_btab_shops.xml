@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="ltr" android:layoutDirection="ltr">
+    <include layout="@layout/row_img_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layShopFragment" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mrsool.customeview.CustomTabLayout android:id="@+id/tabLayMyOrders" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabBackground="@color/apptheme_color" app:tabGravity="0" app:tabMode="1" style="@style/MyCustomTabLayout"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/vpShopsType" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/dp_0" android:layout_width="match_parent" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/dp_4" app:contentPadding="@dimen/dp_0" style="@style/style_dialog">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="end" android:id="@+id/flClose" android:background="@drawable/bg_ripple_25" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true">
+                <LinearLayout android:background="@drawable/bg_light_blue_bg" android:layout_width="40dp" android:layout_height="40dp"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgClose" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/ic_close_mrsool_id" android:scaleType="center"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llLine" android:background="@drawable/line_mrsool_id" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_8" android:layout_marginTop="@dimen/dp_12" android:layout_centerHorizontal="true"/>
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_12" android:id="@+id/TvbadgeHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="MRSOOL ID" android:layout_below="@+id/llLine" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:paddingStart="@dimen/dp_24" android:paddingEnd="@dimen/dp_24">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/clProfilePic" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64">
+                    <com.jackandphantom.circularimageview.CircleImage android:id="@+id/imgPicIamge" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:src="@drawable/user_profile" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                    <ImageView android:id="@+id/ivAcStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ac_verified" android:layout_marginEnd="4dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintCircleAngle="45" app:layout_constraintCircleRadius="@dimen/dp_120" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="1"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_9">
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/Black" android:id="@+id/tvUserFullName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Abdulrahman Alrasal"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                        <RatingBar android:layout_gravity="center_horizontal" android:id="@+id/rbCourier" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_5" android:progressDrawable="@drawable/custom_rating_review_profile" android:rating="3" android:isIndicator="true"/>
+                        <ImageView android:layout_gravity="center" android:id="@+id/ivCar" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_11" android:src="@drawable/ic_car_mrsool_id" android:layout_marginStart="@dimen/dp_8"/>
+                        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_12" android:layout_gravity="center" android:id="@+id/tvOrderCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="129780" android:layout_marginStart="@dimen/dp_6"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_weight="1">
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:id="@+id/tvLblStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Status" style="@style/mrsoolBadgeHeader"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/color_green_2" android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Active"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_weight="1">
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:id="@+id/tvLblDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date" style="@style/mrsoolBadgeHeader"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/text_color_5b" android:id="@+id/tvActivatedDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23-03-2020"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:id="@+id/tvLblNationalId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="Iqama ID" style="@style/mrsoolBadgeHeader"/>
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:id="@+id/tvNationalId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="28377299893787920" style="@style/mrsoolBadgeContent"/>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/rlSponser" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:id="@+id/tvLblSponser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sponser" style="@style/mrsoolBadgeHeader"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:id="@+id/tvSponserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not Available" android:layout_below="@+id/tvLblSponser"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/sky_blue_color" android:id="@+id/tvSponserAdd" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_add" android:layout_alignBaseline="@+id/tvSponserName" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/rlDateUntil" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11">
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:id="@+id/tvLblValidToDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vaild to date" style="@style/mrsoolBadgeHeader"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:id="@+id/tvValidDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23-3-2012" android:layout_below="@+id/tvLblValidToDate"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/sky_blue_color" android:id="@+id/tvDateAdd" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_add" android:layout_alignBaseline="@+id/tvValidDate" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="93dp" android:layout_marginTop="@dimen/dp_16">
+            <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="93dp" android:src="@drawable/bg_mrsool_id" android:scaleType="fitXY"/>
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_12" android:textColor="@color/white" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/tvBadgeFooter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_11" android:text="Show this to officials" android:layout_marginStart="@dimen/dp_19"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_5" android:src="@drawable/ic_mrsool_logo_badge" android:layout_marginEnd="@dimen/dp_12"/>
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cvStep" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20" app:cardBackgroundColor="@color/White" app:cardCornerRadius="@dimen/dp_4">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llMain" android:background="@drawable/bg_ripple_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/row_icon" android:padding="10dp" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp"/>
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="@color/text_color_7a" android:gravity="center_vertical" android:id="@+id/row_title" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

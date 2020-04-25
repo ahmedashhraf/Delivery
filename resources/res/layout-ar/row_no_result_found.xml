@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layNDF" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="rtl" android:layoutDirection="rtl">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_no_result_found"/>
+    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_16" android:textColor="#dddddd" android:gravity="right" android:id="@+id/txtNDF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/lbl_enter_otp_note" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10"/>
+</LinearLayout>

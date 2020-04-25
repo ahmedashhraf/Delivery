@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="rtl" android:layoutDirection="rtl">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/row_txt_toolbar_back_with_shadow"/>
+        <ScrollView android:paddingBottom="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llContent" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="@dimen/dp_65" android:layout_height="@dimen/dp_65">
+                            <ImageView android:layout_gravity="center" android:id="@+id/imgShop" android:background="@color/gray_border" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:src="@drawable/user_profile" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+                            <ImageView android:layout_gravity="center" android:background="@drawable/hint_userphoto_pending_order" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:src="@drawable/circle_image_bg" android:layout_centerInParent="true"/>
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_35" android:layout_marginLeft="@dimen/dp_40" android:layout_marginStart="@dimen/dp_40">
+                            <ImageView android:layout_gravity="center" android:id="@+id/imgSuspect" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/user_profile" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+                            <ImageView android:layout_gravity="center" android:background="@drawable/circle_image_bg_my_orders" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_centerInParent="true"/>
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/layOrderUnreadMsg" android:background="@drawable/circle_badge_view_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginStart="@dimen/dp_5">
+                            <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_12" android:textColor="@color/White" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtOrderUnreadMsg" android:padding="@dimen/dp_3" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dp_20" android:text=""/>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginStart="@dimen/dp_15">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_16" android:textColor="#93a0a5" android:ellipsize="end" android:id="@+id/txtshopName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="Alpha" android:singleLine="true" android:layout_weight="1" android:layout_marginEnd="@dimen/dp_10"/>
+                            <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_14" android:textColor="#808f94" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_number"/>
+                            <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_13" android:textColor="@color/colorPrimary" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtOrderNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/dp_2"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7">
+                            <ImageView android:id="@+id/imgrow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mo_order"/>
+                            <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="#93a0a5" android:id="@+id/txtOrderDiscription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_10" android:text="" android:layout_weight="1" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_10"/>
+                            <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_12" android:textColor="#ed1c24" android:layout_gravity="right" android:id="@+id/txtOrderStatus" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7">
+                            <ImageView android:id="@+id/imgrow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mo_user"/>
+                            <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_10" android:textColor="#93a0a5" android:ellipsize="end" android:id="@+id/txtSuspectName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_10" android:text="" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_10"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7">
+                            <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_14" android:textColor="@color/apptheme_color" android:id="@+id/txtrow5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:capitalize="sentences" android:layout_marginStart="@dimen/dp_5"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="#93a0a5" android:id="@+id/txtComplaintNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="" android:layout_weight="1" android:layout_marginStart="@dimen/dp_5"/>
+                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="#93a0a5" android:id="@+id/txtrowTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="" android:layout_marginStart="@dimen/dp_5"/>
+                    </LinearLayout>
+                    <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_12" android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtEdit" android:background="?attr/selectableItemBackground" android:padding="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_edit" android:textAllCaps="true"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_5">
+                    <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_14" android:textColor="#93a0a5" android:id="@+id/tvReason" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_12" android:textColor="#93a0a5" android:id="@+id/tvReasonDetail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text=""/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_attach_file_24dp" android:tint="#93a0a5" android:rotation="45"/>
+                        <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_14" android:textColor="#93a0a5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="@string/lbl_attachments" android:layout_marginStart="@dimen/dp_8"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/llAttachmentContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="94dp" android:layout_marginTop="@dimen/dp_10" android:weightSum="100">
+                        <RelativeLayout android:id="@+id/rlAttachment1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="33">
+                            <ImageView android:id="@+id/imgAttachment1" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_image_placeholder" android:scaleType="fitXY"/>
+                            <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pgImage1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rlAttachment2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="33" android:layout_marginStart="15dp">
+                            <ImageView android:id="@+id/imgAttachment2" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_image_placeholder" android:scaleType="fitXY"/>
+                            <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pgImage2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rlAttachment3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="33" android:layout_marginStart="15dp">
+                            <ImageView android:id="@+id/imgAttachment3" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_image_placeholder" android:scaleType="fitXY"/>
+                            <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pgImage3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_11" android:textColor="#93a0a5" android:gravity="right" android:id="@+id/txtNDF" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/lbl_no_attachment_found" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10"/>
+                    <View android:layout_gravity="bottom" android:background="@color/setting_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dp_15"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/llByMrsool" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_5">
+                    <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_14" android:textColor="#93a0a5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_by_mrsool"/>
+                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_12" android:id="@+id/txtComplaintResponse" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text=""/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_15" android:layout_marginStart="@dimen/dp_5">
+                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="#999999" android:gravity="end" android:id="@+id/txtResponseTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:layout_alignParentRight="true"/>
+                        <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_12" android:textColor="#93a0a5" android:id="@+id/tvHappy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_happy_now" android:layout_below="@+id/txtResponseTime"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/llUpDown" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_toRightOf="@+id/tvHappy">
+                            <ImageView android:id="@+id/ivUp" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/selector_upvote"/>
+                            <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_12" android:textColor="#93a0a5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_good"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_toRightOf="@+id/ivUp" android:layout_marginStart="@dimen/dp_15">
+                            <ImageView android:id="@+id/ivDown" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/selector_downvote"/>
+                            <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_12" android:textColor="#93a0a5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_bad"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:layout_gravity="bottom" android:background="@color/setting_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_15" android:layout_marginStart="@dimen/dp_5"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

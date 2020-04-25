@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/llContainerMain" android:background="@color/colorAccent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/llSkipContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_17" android:textColor="@color/White" android:gravity="center" android:id="@+id/txtSkip" android:background="?attr/selectableItemBackground" android:padding="10dp" android:clickable="true" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/lbl_skip"/>
+            <com.viewpagerindicator.CirclePageIndicator android:layout_gravity="center_vertical" android:id="@+id/pagerIndicator" android:padding="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingEnd="@dimen/dp_10" app:fillColor="@color/indicator_fill" app:paddingStart="@dimen/dp_10" app:pageColor="@color/indicator_default" app:radius="5dp" app:snap="false" app:strokeColor="@android:color/transparent"/>
+            <ImageView android:id="@+id/imgArrow" android:background="?attr/selectableItemBackground" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_weight="0.05"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

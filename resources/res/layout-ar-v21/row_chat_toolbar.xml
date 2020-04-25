@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="rtl" android:layoutDirection="rtl">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/tbTXT" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:elevation="0dp" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/AppTheme.PopupOverlay1" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/llBack" android:background="@drawable/bg_toolbar_option" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/ivBack" android:layout_width="25dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_16" android:src="@drawable/back_white" android:rotation="180" android:layout_marginStart="@dimen/dp_16"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivIcon" android:visibility="invisible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/dp_2" android:src="@drawable/shop_place_holder_white" android:layout_marginStart="@dimen/dp_2"/>
+                    </LinearLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_8">
+                        <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_18" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/txtTitle" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:layout_marginRight="@dimen/dp_10" android:text="" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="@dimen/dp_2" android:layout_marginEnd="@dimen/dp_10" style="@style/CustomHeaderLable"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:layout_below="@+id/txtTitle" android:layout_marginStart="@dimen/dp_2">
+                            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="8sp" android:textColor="@android:color/white" android:id="@+id/txtOrderId" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="8sp" android:textColor="#ffff00" android:id="@+id/txtOrderStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginStart="@dimen/dp_15"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llReportOrder" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_40" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ic_report_order"/>
+                        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_10" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/lbl_report"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/custom_marker_branch_new_order_0" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/flTitle" android:background="@drawable/bg_map_new_order_pin_pickup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_deliver_to" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="@dimen/dp_5" android:drawableStart="@drawable/ic_pin_pickup_new"/>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivLocationPin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/flTitle" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_map_order_new"/>
+    <p438de.hdodenhof.circleimageview.CircleImageView android:id="@+id/ivBranchPin" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_35" android:layout_below="@+id/flTitle" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/card_brand_border" android:background="@drawable/opp_selector_card_brand" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginEnd="10dp">
+        <ImageView android:id="@+id/card_brand_logo" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="@dimen/card_brand_logo_width" android:layout_height="@dimen/card_brand_logo_height" android:scaleType="centerInside"/>
+        <ProgressBar android:id="@+id/loading_panel" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="@dimen/card_brand_logo_width" android:layout_height="@dimen/card_brand_logo_height"/>
+        <ImageView android:id="@+id/expand_brand_selection_imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/expand" android:layout_toRightOf="@+id/card_brand_logo" android:layout_centerVertical="true" android:layout_marginEnd="5dp" android:layout_toEndOf="@+id/card_brand_logo"/>
+    </RelativeLayout>
+</FrameLayout>

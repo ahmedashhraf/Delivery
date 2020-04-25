@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+        <ImageView android:id="@+id/imgLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_100" android:src="@drawable/ic_mrsool_logo_small" android:layout_centerHorizontal="true" android:transitionName="@string/lbl_transition_logo"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llSelection" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:animateLayoutChanges="true">
+            <FrameLayout android:id="@+id/flLanguageArabic" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/ivLanguageArabic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:src="@drawable/ic_tick_language"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_16" android:textColor="@color/text_color_7b" android:gravity="center_horizontal" android:id="@+id/tvLanguageArabic" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="العربية"/>
+            </FrameLayout>
+            <View android:background="@color/divider_color_eb" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <FrameLayout android:id="@+id/flLanguageEng" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/ivLanguageEng" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:src="@drawable/ic_tick_language"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_16" android:textColor="@color/text_color_7b" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/tvLanguageEng" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="English"/>
+            </FrameLayout>
+        </LinearLayout>
+        <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_20" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/btnDone" android:background="@drawable/bg_sky_blue_seletor" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:text="@string/lbl_next_en" android:includeFontPadding="false" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

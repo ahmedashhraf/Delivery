@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llSettingAnnouncementNoti" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_68" android:paddingStart="@dimen/dp_18" android:paddingEnd="@dimen/dp_16">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_announcement"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/shops_title_text_gray" android:gravity="center_vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_20" android:text="@string/lbl_announcements_optional" android:layout_weight="1" android:layout_marginStart="@dimen/dp_9"/>
+                </LinearLayout>
+                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/shops_title_text_gray" android:gravity="center_vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_16" android:text="@string/announcement_noti_detail" android:includeFontPadding="false" android:layout_weight="1" android:layout_marginStart="@dimen/dp_23"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/swtSettingAnnouncementNotification" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="@color/light_gray_6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llSettingNewOrderNoti" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_68" android:paddingStart="@dimen/dp_18" android:paddingEnd="@dimen/dp_16">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_new_order"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/shops_title_text_gray" android:gravity="center_vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_20" android:text="@string/lbl_new_order_notifications_couriers" android:layout_weight="1" android:layout_marginStart="@dimen/dp_9"/>
+                </LinearLayout>
+                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/shops_title_text_gray" android:gravity="center_vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_16" android:text="@string/new_order_noti_detail" android:includeFontPadding="false" android:layout_weight="1" android:layout_marginStart="@dimen/dp_21"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/swtSettingNewOrderNotification" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="@color/light_gray_6" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llSettingNearByNoti" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_68" android:paddingStart="@dimen/dp_18" android:paddingEnd="@dimen/dp_16">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nearby"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/shops_title_text_gray" android:gravity="center_vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_20" android:text="@string/lbl_nearby_notification" android:layout_weight="1" android:layout_marginStart="@dimen/dp_9"/>
+                </LinearLayout>
+                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/shops_title_text_gray" android:gravity="center_vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_16" android:text="@string/nearby_order_noti_detail" android:includeFontPadding="false" android:layout_weight="1" android:layout_marginStart="@dimen/dp_19"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/swtSettingnearByNotification" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="@color/light_gray_6" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+</LinearLayout>

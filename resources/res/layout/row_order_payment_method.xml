@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llPayment" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_22" android:paddingEnd="@dimen/dp_16">
+            <ImageView android:id="@+id/ivPaymentMethodIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_halalah_logo_small" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_17" android:layout_toEndOf="@+id/ivPaymentMethodIcon">
+                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_15" android:textColor="@color/color_selected_payment_method" android:id="@+id/tvPaymentMethodName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_cash"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llWarning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="@color/gray_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_halalah_app_is_not_installed"/>
+                    <ImageView android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:src="@drawable/ic_grey_warning" android:layout_marginStart="@dimen/dp_5"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/vDivider" android:background="@color/order_now_txt_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

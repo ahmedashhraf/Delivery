@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#7a858c" android:pathData="M12.829,17H15.171C15.583,18.165 16.694,19 18,19C19.306,19 20.417,18.165 20.829,17H22C23.105,17 24,16.105 24,15V10.465L20.776,8.315L19.171,6.106C18.832,5.428 18.139,5 17.382,5H10.618C9.861,5 9.168,5.428 8.829,6.106L7.224,8.315L4,10.465V15C4,16.105 4.895,17 6,17H7.171C7.583,18.165 8.694,19 10,19C11.306,19 12.417,18.165 12.829,17ZM10.618,7L8.776,9.685L6,11.535V15H7.171C7.583,13.835 8.694,13 10,13C11.306,13 12.417,13.835 12.829,15H15.171C15.583,13.835 16.694,13 18,13C19.306,13 20.417,13.835 20.829,15H22V11.535L19.224,9.685L17.382,7H10.618ZM10,17C9.448,17 9,16.552 9,16C9,15.448 9.448,15 10,15C10.552,15 11,15.448 11,16C11,16.552 10.552,17 10,17ZM18,17C18.552,17 19,16.552 19,16C19,15.448 18.552,15 18,15C17.448,15 17,15.448 17,16C17,16.552 17.448,17 18,17Z" android:fillType="1"/>
+    <path android:fillColor="#7a858c" android:pathData="M1,6L6,6V7L1,7V6Z"/>
+    <path android:fillColor="#7a858c" android:pathData="M3,9L1,9V10L3,10V9Z"/>
+    <path android:fillColor="#7a858c" android:pathData="M0,12L3,12V13L0,13V12Z"/>
+    <path android:fillColor="#7a858c" android:pathData="M3,15H1V16H3V15Z"/>
+</vector>

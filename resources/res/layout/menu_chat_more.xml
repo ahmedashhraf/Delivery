@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_vertical" android:id="@+id/flOptions" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginEnd="@dimen/dp_8">
+    <View android:background="@drawable/bg_white" android:layout_width="40dp" android:layout_height="40dp" android:alpha="0.1"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgOptions" android:background="@drawable/bg_ripple_25" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_options" android:scaleType="center"/>
+</FrameLayout>

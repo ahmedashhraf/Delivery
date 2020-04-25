@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_12" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:shrinkColumns="0">
+    <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/text_color_5b" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvReason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/ivSelectedReason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tick_sky_blue"/>
+    </FrameLayout>
+</LinearLayout>

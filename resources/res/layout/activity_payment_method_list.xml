@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_white_back_blue"/>
+    <View android:background="@color/order_place_holder_bg" android:layout_width="match_parent" android:layout_height="1dp" style="@style/DividerHorizontal"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPaymentModes" android:visibility="visible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_13"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pgPaymentMethod" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    </FrameLayout>
+</LinearLayout>

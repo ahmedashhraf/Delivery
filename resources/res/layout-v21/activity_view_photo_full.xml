@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/llContainerMain" android:background="@color/Black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/imageProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:transitionName="@string/tran_menu_item_image"/>
+    <ImageView android:id="@+id/imgGif" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <LinearLayout android:gravity="center" android:id="@+id/llClose" android:background="?attr/selectableItemBackground" android:padding="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/dp_3">
+        <ImageView android:id="@+id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_white" android:layout_marginStart="@dimen/dp_5"/>
+    </LinearLayout>
+</RelativeLayout>

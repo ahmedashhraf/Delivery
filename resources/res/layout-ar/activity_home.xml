@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContainerMain" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="rtl" android:layoutDirection="rtl">
+        <ImageView android:id="@+id/ivDummy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llFetchLocationPb" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/shops_title_text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/lbl_fetching_location"/>
+            </LinearLayout>
+            <com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:layout_gravity="bottom" android:id="@+id/vbottomShadow" android:background="@drawable/bottombar_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_4"/>
+        </FrameLayout>
+        <com.aurelhubert.ahbottomnavigation.AHBottomNavigation android:layout_gravity="bottom" android:id="@+id/bottom_navigation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:textDirection="rtl" android:layoutDirection="rtl"/>
+        <FrameLayout android:id="@+id/contentContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

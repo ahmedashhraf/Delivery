@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llPayment" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_59">
+        <ImageView android:id="@+id/ivPaymentMethodIcon" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/card_unknown" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_5"/>
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_18" android:textColor="@android:color/black" android:gravity="start" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/tvPaymentMethodName" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="Credit or Debit Card" android:layout_weight="1" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"/>
+        <ImageView android:id="@+id/ivPaymentMethodSelected" android:layout_width="@dimen/dp_17" android:layout_height="@dimen/dp_13" android:src="@drawable/arrow" android:rotation="90" android:layout_marginEnd="@dimen/dp_6"/>
+    </LinearLayout>
+    <View android:id="@+id/vDivider" android:background="@color/order_place_holder_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" style="@style/DividerHorizontal"/>
+</LinearLayout>

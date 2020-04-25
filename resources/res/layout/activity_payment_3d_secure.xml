@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_52" android:paddingStart="@dimen/dp_16">
+        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/text_color_5b" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/lbl_invoice_payment_revised" android:includeFontPadding="false" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llBack" android:background="@drawable/bg_ripple_30" android:padding="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_close" android:contentDescription="@string/close"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/divider_f2"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_title_bar"/>
+        <WebView android:id="@+id/wvTermsService" android:padding="@dimen/dp_10" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/dummy_text"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pgComplaint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+</LinearLayout>

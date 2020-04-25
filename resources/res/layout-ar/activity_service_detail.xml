@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="rtl" android:layoutDirection="rtl">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="@dimen/dp_5">
+        <include layout="@layout/row_service_detail_toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pgLoadMore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    <com.mrsool.utils.CustomViewPager android:id="@+id/vpShopDetail" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <LinearLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_20">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center" android:id="@+id/fabOrderNow" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/icon_order_now" android:scaleType="center" app:fabSize="-1" app:layout_anchor="@+id/vpShopDetail"/>
+        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_12" android:textColor="@color/shop_type_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_order_now" android:maxLines="1"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

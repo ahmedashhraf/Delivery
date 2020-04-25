@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivMarkerIcon" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_35" android:layout_marginTop="-20dp" android:src="@drawable/ic_tracking_pin_pickup_new" android:layout_below="@+id/ivTriangle" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/ivTriangle" android:background="@drawable/ic_triangle_white" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginTop="-2dp" android:layout_below="@+id/cvLabel" android:layout_centerInParent="true" android:rotation="180"/>
+    <androidx.cardview.widget.CardView android:id="@+id/cvLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/dp_12" app:cardElevation="@dimen/dp_3">
+        <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_13" android:textColor="@color/Black" android:id="@+id/tvLabel" android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Customer" android:paddingStart="@dimen/dp_7" android:paddingEnd="@dimen/dp_7"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

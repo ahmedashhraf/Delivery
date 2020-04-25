@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_24" app:cardBackgroundColor="@color/sky_blue_color_trans" app:cardCornerRadius="@dimen/dp_4" app:cardElevation="@dimen/dp_2">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dp_125">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llMarkDefault" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/text_color_5b" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/lbl_mark_default" android:layout_weight="1"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_overflow_blue" android:tint="@color/text_color_5b" android:layout_marginStart="@dimen/dp_16"/>
+            </LinearLayout>
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/red_lite_3" android:id="@+id/tvCardError" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_delete_notification"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

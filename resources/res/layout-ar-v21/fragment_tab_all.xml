@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="rtl" android:layoutDirection="rtl">
+    <androidx.core.widget.NestedScrollView android:id="@+id/nsvAllShop" android:layout_width="match_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@color/type_of_list" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_16" android:textColor="@color/shop_type_color" android:padding="@dimen/dp_15" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/lbl_tab_see_nearby" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/imgSeeAllNearBy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_see_all"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llSeeAllNearBy" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp_25" android:layout_marginEnd="@dimen/dp_25">
+                    <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_12" android:textColor="@color/White" android:gravity="center" android:layout_gravity="center" android:background="@drawable/border_see_all" android:paddingLeft="12dp" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_see_all" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:gravity="center" android:layout_gravity="center" android:background="@color/gray_border" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:alpha="0.5"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/content_marsool_package"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_150">
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/pg1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvAllShops" android:visibility="invisible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_16" android:textColor="@color/shop_type_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtNearByNoShops" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View android:gravity="center" android:layout_gravity="center" android:background="@color/gray_border" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:alpha="0.5"/>
+            <com.mrsool.customeview.CustomeTextViewBold android:textSize="@dimen/sp_16" android:textColor="@color/shop_type_color" android:background="@color/type_of_list" android:padding="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_tab_most_active"/>
+            <View android:gravity="center" android:layout_gravity="center" android:background="@color/gray_border" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:alpha="0.5"/>
+            <FrameLayout android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/dp_150">
+                <ProgressBar android:layout_gravity="center" android:id="@+id/pg2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvMostActive" android:visibility="invisible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_10" android:nestedScrollingEnabled="false"/>
+                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_16" android:textColor="@color/shop_type_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtMostActiveNoShops" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <ProgressBar android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/pgLoadMore" android:paddingBottom="@dimen/dp_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+            <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_16" android:textColor="@color/shop_type_color" android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/txtNoMoreResult" android:padding="@dimen/dp_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_no_more_result"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

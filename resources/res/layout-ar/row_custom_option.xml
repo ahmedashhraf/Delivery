@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/llSeeRoute" android:background="@drawable/bg_toolbar_option" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="rtl" android:layoutDirection="rtl" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map_route"/>
+    <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_10" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/txtTitle" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="1"/>
+</LinearLayout>

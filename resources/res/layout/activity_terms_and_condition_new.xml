@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/layout_title_bar_accent"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <WebView android:id="@+id/wvTermsAndService" android:padding="@dimen/dp_10" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/dummy_text" android:layout_weight="1"/>
+            <ProgressBar android:theme="@style/progressBarSkyBlue" android:layout_gravity="center" android:id="@+id/pbAPI" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_64" android:minHeight="@dimen/dp_64" android:layout_centerInParent="true"/>
+        </FrameLayout>
+        <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_20" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/btnAgree" android:background="@drawable/bg_sky_blue_seletor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:text="@string/lbl_agree" android:includeFontPadding="false" android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pgTermsAndCondition" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+</RelativeLayout>

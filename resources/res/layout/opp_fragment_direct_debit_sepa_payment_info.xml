@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/windowBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" layout="@layout/opp_layout_actionbar"/>
+    <include android:id="@+id/payment_button_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/opp_layout_checkout_paybutton"/>
+    <ScrollView android:id="@+id/payment_info_scroll_view" android:paddingLeft="@dimen/checkout_payment_data_padding" android:paddingRight="@dimen/checkout_payment_data_padding" android:paddingBottom="@dimen/checkout_payment_data_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/payment_button_layout" android:layout_below="@+id/header">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/payment_info_header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/opp_layout_payment_info_header"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/holder_text_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/payment_info_header" style="@style/TextInputLayout">
+                <com.oppwa.mobile.connect.checkout.dialog.view.CheckoutEditText android:id="@+id/holder_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/checkout_layout_hint_direct_debit_sepa_account_holder" android:maxLength="@integer/accountHolderMaxLength" android:inputType="none|text|textCapCharacters|textNoSuggestions" android:privateImeOptions="nm" android:imeOptions="actionNext" style="?attr/checkoutEditTextStyle"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.oppwa.mobile.connect.checkout.dialog.view.CheckoutTextView android:id="@+id/holder_helper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-25dp" android:layout_below="@+id/holder_text_input_layout" style="?attr/checkoutHelperTextViewStyle"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/iban_text_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/holder_helper" style="@style/TextInputLayout">
+                <com.oppwa.mobile.connect.checkout.dialog.view.CheckoutEditText android:id="@+id/iban_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/checkout_layout_hint_direct_debit_sepa_iban" android:maxLength="@integer/ibanMaxLength" android:inputType="none|text|textCapCharacters|textNoSuggestions" android:privateImeOptions="nm" android:imeOptions="actionDone" style="?attr/checkoutEditTextStyle"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.oppwa.mobile.connect.checkout.dialog.view.CheckoutTextView android:id="@+id/iban_helper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-25dp" android:hint="@string/checkout_helper_iban" android:layout_below="@+id/iban_text_input_layout" style="?attr/checkoutHelperTextViewStyle"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/iban_helper">
+                <include android:id="@+id/store_payment_info_layout" android:visibility="gone" layout="@layout/opp_layout_store_payment_info"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

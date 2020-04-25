@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/flAddImage" android:background="@drawable/bg_ripple_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_marginTop="@dimen/dp_12" android:layout_marginRight="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8">
+        <com.jackandphantom.circularimageview.RoundedImage android:id="@+id/ivImage" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_80" app:border_width="@dimen/dp_1" app:rounded_radius="15"/>
+        <FrameLayout android:id="@+id/flAddImageSub" android:background="@drawable/bg_round_corner_with_border" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_80">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:src="@drawable/img_add_image"/>
+            <com.mrsool.customeview.CustomeTextViewRobotoBold android:textSize="@dimen/sp_11" android:textColor="@color/alpha_gray_color" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_14" android:text="@string/lbl_add_more" android:textAllCaps="true"/>
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView android:id="@+id/ivDelete" android:background="@drawable/bg_ripple_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_delte_image"/>
+</FrameLayout>

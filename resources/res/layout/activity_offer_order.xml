@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <FrameLayout android:id="@+id/flMainCor" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.mrsool.utils.WABottomSheetBehavior"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/flMapContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_238">
+                <include layout="@layout/row_google_map"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fabRedirectMap" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/fab_margin" android:layout_marginBottom="@dimen/dp_36" android:src="@drawable/ic_near_me_gray_24dp" android:scaleType="center" android:layout_marginStart="@dimen/fab_margin" android:layout_marginEnd="@dimen/fab_margin" app:backgroundTint="@color/White" app:elevation="6dp" app:fabSize="1" app:pressedTranslationZ="12dp"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fabMylocation" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_96" android:src="@drawable/ic_my_location_gray_24dp" android:scaleType="center" android:layout_above="@+id/fabRedirectMap" android:layout_marginEnd="@dimen/dp_16" app:backgroundTint="@color/White" app:elevation="6dp" app:fabSize="1"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/ibBack" android:visibility="visible" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_16" android:src="@drawable/ic_arrow_back" android:layout_marginStart="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_18" app:backgroundTint="@color/White" app:elevation="@dimen/dp_6" app:fabCustomSize="@dimen/dp_40" app:fabSize="0"/>
+                <LinearLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:id="@+id/llTime" android:background="@drawable/bg_marker_shadow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22" android:layout_marginEnd="@dimen/dp_10">
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/sky_blue_color" android:gravity="center" android:id="@+id/tvTime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_29" android:text="3.5 Hrs" android:includeFontPadding="false" android:drawablePadding="@dimen/dp_5" android:drawableStart="@drawable/ic_time_small" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/llBottomContainer" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_258" android:animateLayoutChanges="true">
+                <FrameLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_140">
+                    <View android:background="@drawable/shadow_top" android:layout_width="match_parent" android:layout_height="@dimen/dp_20"/>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:layout_gravity="bottom" android:id="@+id/viewShadowBg" android:background="@color/app_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_112" android:layout_marginTop="@dimen/dp_20"/>
+                        <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@+id/rvSteps" android:background="@android:color/transparent" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/llDeliveryCost" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_118">
+                        <FrameLayout android:id="@+id/flCost" android:background="@drawable/ic_offer_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_16" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                            <ImageView android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_search_1" android:scaleType="fitXY"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_amount" android:layout_marginStart="@dimen/dp_19"/>
+                                <com.mrsool.customeview.CustomeEditTextRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/package_title_text" android:textColorHint="@color/search_text_gray" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center_vertical" android:id="@+id/edCost" android:background="@color/transparent" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="@dimen/dp_30" android:hint="" android:includeFontPadding="false" android:maxLength="10" android:layout_weight="1" android:inputType="numberDecimal" android:imeOptions="actionDone" android:paddingStart="@dimen/dp_11" android:paddingEnd="@dimen/dp_16"/>
+                                <LinearLayout android:gravity="start" android:id="@+id/llSend" android:background="@drawable/bg_ripple_4" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textColor="@color/sky_blue_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/lbl_send" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/llInfo" android:background="?android:attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="@dimen/dp_10" android:animateLayoutChanges="true" android:paddingStart="@dimen/dp_8">
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="@color/dark_gray_2" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/tvDesc" android:background="@drawable/text_line" android:paddingBottom="@dimen/dp_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_collect_from_customer" android:includeFontPadding="false" android:paddingEnd="@dimen/dp_3"/>
+                                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/sky_blue_color" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/tvPrice" android:background="@drawable/text_line" android:paddingBottom="@dimen/dp_2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:includeFontPadding="false"/>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/ivInfo" android:padding="@dimen/dp_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_price_worning" android:animateLayoutChanges="true"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@+id/rlTimer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_118">
+                        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pbDelay" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:progress="50" android:progressDrawable="@drawable/green_progress_drawable" android:layoutDirection="rtl" style="?android:attr/progressBarStyleHorizontal"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_30" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tvTimerRemainTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="00:02"/>
+                            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_delay_info"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:visibility="gone" layout="@layout/row_txt_toolbar_offer_screen"/>
+                    <RelativeLayout android:orientation="horizontal" android:background="@color/colorPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_56">
+                        <ImageView android:layout_gravity="center" android:id="@+id/imgUserProfile" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/hint_userpic" android:layout_centerVertical="true" android:layout_marginStart="13dp"/>
+                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="16sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/txtUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="De**i" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_12" android:layout_toEndOf="@+id/imgUserProfile"/>
+                        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_offer_deliver_time" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_13" android:layout_alignParentEnd="true">
+                            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@drawable/ic_time"/>
+                            <com.mrsool.customeview.CustomeTextViewBold android:textSize="13sp" android:textColor="@color/colorPrimary" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 Days" android:layout_marginStart="5dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layYouStoreCustomer" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_112" android:layout_marginTop="@dimen/dp_5" android:layout_weight="15" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pending_courier"/>
+                                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_7" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_you"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_weight="1">
+                                <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_8" android:layout_gravity="center" android:id="@+id/txtTimeYouToStore" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@color/shop_type_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_1" android:layout_weight="1" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pending_store"/>
+                                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_7" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_store"/>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_weight="1">
+                                <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_8" android:layout_gravity="center" android:id="@+id/txtTimeStoreToCustomer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@color/shop_type_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_1" android:layout_weight="1" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pending_customer"/>
+                                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_7" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_customer"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/layDeliveryStoreLocation" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="17" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="50" android:paddingEnd="@dimen/dp_10">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/ic_home"/>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="19dp">
+                                        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_13" android:textColor="@android:color/black" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_store_location"/>
+                                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="@android:color/black" android:gravity="start" android:layout_gravity="start" android:id="@+id/txtStoreLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="" android:maxLines="3"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="50" android:paddingStart="@dimen/dp_10">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/ic_customer" android:scaleType="fitXY"/>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="19dp">
+                                        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_13" android:textColor="@android:color/black" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_delivery_location"/>
+                                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="@android:color/black" android:gravity="start" android:layout_gravity="start" android:id="@+id/txtDeliveryLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="" android:maxLines="3"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/layPickUpDropOffLocation" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="17" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15">
+                            <LinearLayout android:orientation="vertical" android:id="@+id/llPickupLocation" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="50" android:paddingEnd="@dimen/dp_10">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/ic_pickdropoff"/>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="19dp">
+                                        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_13" android:textColor="@android:color/black" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_pickup_location"/>
+                                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="@android:color/black" android:gravity="start" android:layout_gravity="start" android:id="@+id/tvStoreLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="" android:maxLines="3"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/llDropOffLocation" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="50" android:paddingStart="@dimen/dp_10">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/ic_pickdropoff" android:scaleType="fitXY"/>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_19">
+                                        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_13" android:textColor="@android:color/black" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_dropoff_location"/>
+                                        <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_10" android:textColor="@android:color/black" android:gravity="start" android:layout_gravity="start" android:id="@+id/tvDeliveryLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="" android:maxLines="3"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:background="#7d8a92" android:layout_width="match_parent" android:layout_height="0.33dp" android:alpha="0.5"/>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layYouPickUpDropOff" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_5" android:layout_weight="15" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pending_courier"/>
+                                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_7" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_you"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_weight="1">
+                                <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_8" android:layout_gravity="center" android:id="@+id/tvTimeYouToStore" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@color/shop_type_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_1" android:layout_weight="1" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/llPickUpTrackPoint" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:id="@+id/llSendLoc1" android:background="@drawable/circle_shape_gray" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25">
+                                    <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ic_place_black_24dp" android:tint="@color/White"/>
+                                </LinearLayout>
+                                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_7" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_pickup"/>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_weight="1">
+                                <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_8" android:layout_gravity="center" android:id="@+id/tvTimeStoreToCustomer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@color/shop_type_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_1" android:layout_weight="1" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:id="@+id/llSendLoc" android:background="@drawable/circle_shape_gray" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25">
+                                    <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ic_place_black_24dp" android:tint="@color/White"/>
+                                </LinearLayout>
+                                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_7" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_dropoff"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layYouDropOff" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_5" android:layout_weight="15" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pending_courier"/>
+                                    <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_7" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_you"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_200" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:layout_weight="1">
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/llDevider" android:background="@color/shop_type_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_below="@+id/tvYouDropOffDistance" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5"/>
+                                <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_8" android:id="@+id/tvYouDropOffDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true"/>
+                            </RelativeLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:id="@+id/llSendLoc11" android:background="@drawable/circle_shape_gray" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25">
+                                    <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ic_place_black_24dp" android:tint="@color/White"/>
+                                </LinearLayout>
+                                <com.mrsool.customeview.CustomeTextViewRegular android:textSize="@dimen/sp_7" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/lbl_dropoff"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:background="#7d8a92" android:layout_width="match_parent" android:layout_height="0.33dp" android:alpha="0.5"/>
+                    </LinearLayout>
+                    <View android:layout_gravity="bottom" android:background="@drawable/toolbar_dropshadow" android:layout_width="match_parent" android:layout_height="2dp"/>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

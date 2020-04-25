@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/llContainerMain" android:background="@color/Black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mrsool.customeview.TwitterVideoView.VideoView android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/ivVideoThumb" android:layout_width="match_parent" android:layout_height="200dp" android:layout_centerInParent="true"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/video_progress_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <com.mrsool.customeview.TwitterVideoView.VideoControlView android:layout_gravity="bottom" android:id="@+id/video_control_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/tw__text_size_medium" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/call_to_action_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:id="@+id/llClose" android:background="?attr/selectableItemBackground" android:padding="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_white" android:layout_marginStart="@dimen/dp_5"/>
+    </LinearLayout>
+</RelativeLayout>

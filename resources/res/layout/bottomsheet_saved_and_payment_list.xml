@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_52" android:paddingStart="@dimen/dp_12">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_8">
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/flBack" android:layout_width="40dp" android:layout_height="40dp">
+                <View android:background="@drawable/bg_white" android:layout_width="40dp" android:layout_height="40dp" android:alpha="0.1"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgClose" android:background="@drawable/bg_sky_blue_ripple_40" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/back_white" android:scaleType="center" android:tint="@color/sky_blue_color"/>
+            </FrameLayout>
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/text_color_5b" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/txtTitle" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_method" android:singleLine="true" android:layout_marginStart="@dimen/dp_12" style="@style/CustomHeaderLable"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/divider_f2"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPaymentModes" android:visibility="visible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_13"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pgPaymentMethod" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    </FrameLayout>
+</LinearLayout>

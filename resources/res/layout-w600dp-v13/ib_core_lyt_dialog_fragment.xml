@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ib_dialog_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/instabug_main_prompt_container" android:background="@drawable/instabug_bg_card" android:padding="24dp" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/instabug_fragment_title" android:background="@android:color/transparent" android:clickable="true" android:layout_width="match_parent" android:layout_marginBottom="20dp" style="@style/InstabugToolbarTitle"/>
+        <ListView android:id="@+id/instabug_prompt_options_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp" android:layout_below="@+id/instabug_fragment_title" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/instabug_main_prompt_container" android:layout_centerHorizontal="true" layout="@layout/instabug_lyt_pbi"/>
+</RelativeLayout>

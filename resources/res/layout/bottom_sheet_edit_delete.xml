@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/bottomSheet" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llEdit" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_edit_pan" android:layout_marginStart="@dimen/dp_25"/>
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/shops_title_text_gray" android:ellipsize="end" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_edit_review" android:singleLine="true" android:layout_marginStart="@dimen/dp_55"/>
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llDelete" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_review_delete" android:tint="@color/red_lite_2" android:layout_marginStart="@dimen/dp_25"/>
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_16" android:textColor="@color/red_lite_2" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_delete_review" android:layout_marginStart="@dimen/dp_55"/>
+    </FrameLayout>
+</LinearLayout>

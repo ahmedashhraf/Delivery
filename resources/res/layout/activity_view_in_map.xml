@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/myCoordinator" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="ltr" android:layoutDirection="ltr">
+    <include layout="@layout/row_txt_toolbar_back_with_shadow"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1">
+        <include layout="@layout/row_google_map"/>
+        <TextView android:textColor="@android:color/transparent" android:layout_gravity="center" android:id="@+id/txtDot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="@dimen/dp_2" android:text="" android:layout_centerInParent="true"/>1 
+        <LinearLayout android:orientation="vertical" android:id="@+id/locationMarker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5dp" android:layout_above="@+id/txtDot" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pin_pick_location"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

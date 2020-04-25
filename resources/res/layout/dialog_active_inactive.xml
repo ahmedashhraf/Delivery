@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:textDirection="ltr" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layActive" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_18" android:textColor="@color/dialog_title_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_active_order" android:singleLine="false" android:layout_weight="1" style="@style/CustomHeaderLable"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/imgActive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tick"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layInActive" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <com.mrsool.customeview.CustomeTextViewSemiBold android:textSize="@dimen/sp_18" android:textColor="@color/dialog_title_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_inactive_order" android:singleLine="false" android:layout_weight="1" style="@style/CustomHeaderLable"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/imgInActive" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tick"/>
+    </LinearLayout>
+</LinearLayout>

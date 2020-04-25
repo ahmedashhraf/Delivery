@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/view_tooltip_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llToolTipMain" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@+id/llToolTip" android:background="@drawable/bg_ripple_5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_gray_5" android:paddingBottom="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12">
+                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tvTooltipMessage" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="292dp" android:layout_marginEnd="@dimen/dp_8"/>
+                <com.google.android.material.button.MaterialButton android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/btnTooltipDone" android:padding="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_24" android:text="@string/lbl_ok" android:includeFontPadding="false" app:backgroundTint="@color/sky_blue_color" app:cornerRadius="@dimen/dp_4" app:fontFamily="@font/roboto_medium" app:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ivToolTipArrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="7dp" android:src="@drawable/img_tooltip_arrow" android:tint="@color/dark_gray_4" android:rotation="180"/>
+    </LinearLayout>
+</LinearLayout>

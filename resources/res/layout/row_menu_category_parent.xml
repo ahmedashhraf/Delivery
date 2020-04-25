@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/topView" android:background="@color/order_place_holder_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_8"/>
+    <LinearLayout android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:shrinkColumns="0">
+                <TableRow android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="@android:color/black" android:ellipsize="end" android:layout_gravity="start" android:id="@+id/listTitle" android:paddingTop="@dimen/dp_13" android:paddingBottom="@dimen/dp_13" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_weight="1" android:paddingStart="@dimen/dp_16"/>
+                    <include layout="@layout/layout_menu_badge_view"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down_solid" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:id="@+id/viewTopDivider" android:background="@color/divider_toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+    <View android:id="@+id/bottomView" android:background="@color/order_place_holder_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_8"/>
+</LinearLayout>

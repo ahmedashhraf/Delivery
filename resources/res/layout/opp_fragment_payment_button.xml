@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/payment_button" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Checkout.PaymentButton"/>
+        <ProgressBar android:id="@+id/loading_panel" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminate="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include android:id="@+id/pay_with_google_layout" android:visibility="gone" layout="@layout/opp_layout_gpay_button_short_no_shadow"/>
+    </FrameLayout>
+</RelativeLayout>

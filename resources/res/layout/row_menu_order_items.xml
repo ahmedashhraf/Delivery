@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llMain" android:background="@drawable/bg_round_corner_edit_text_gray_center" android:paddingTop="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+        <View android:id="@+id/viewTop" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/dp_4"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/shops_title_text_gray" android:ellipsize="end" android:gravity="start" android:id="@+id/ivName" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Cheese Burger" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1" android:textDirection="ltr" android:layout_marginEnd="@dimen/dp_5"/>
+                    <include android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_8" layout="@layout/view_amount_currency"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivArrow" android:tag="0" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_marginTop="@dimen/dp_2" android:src="@drawable/ic_arrow_down_solid"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="@color/dark_gray_2" android:ellipsize="end" android:id="@+id/tvDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="Large, Extra Cheese " android:maxLines="1" android:includeFontPadding="false"/>
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_14" android:textColor="@color/red_lite_2" android:ellipsize="end" android:id="@+id/tvError" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="Large, Extra Cheese " android:maxLines="1" android:includeFontPadding="false"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_12">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:background="@drawable/bg_border_cart_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_32" android:minHeight="@dimen/dp_32">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llMinus" android:background="@drawable/bg_ripple_4" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="@dimen/dp_32" android:minHeight="@dimen/dp_32">
+                            <ImageView android:layout_gravity="center" android:id="@+id/ivDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_item_minus"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@color/sky_blue_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvOrderCount" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/dp_45" android:text="0" android:includeFontPadding="false" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8"/>
+                    <LinearLayout android:gravity="center" android:background="@drawable/bg_border_cart_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_32" android:minHeight="@dimen/dp_32">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llPlus" android:background="@drawable/bg_ripple_4" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="@dimen/dp_32" android:minHeight="@dimen/dp_32">
+                            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_item_plus"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/sky_blue_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvEdit" android:background="?android:attr/selectableItemBackground" android:padding="@dimen/dp_7" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_edit" android:includeFontPadding="false" android:layout_marginEnd="@dimen/dp_6"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/viewLine" android:background="@color/bg_drop_off" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_16"/>
+        <View android:id="@+id/viewBottom" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/dp_4"/>
+    </LinearLayout>
+</LinearLayout>

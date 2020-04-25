@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/tbTXT" android:background="@color/sky_blue_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_56" android:elevation="0dp" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/AppTheme.PopupOverlay1" app:theme="@style/ToolbarTheme">
+        <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+                    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/flBack" android:layout_width="40dp" android:layout_height="40dp">
+                        <View android:background="@drawable/bg_white" android:layout_width="40dp" android:layout_height="40dp" android:alpha="0.1"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgClose" android:background="@drawable/bg_ripple_25" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/back_white" android:scaleType="center"/>
+                    </FrameLayout>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivIcon" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/dp_2" android:src="@drawable/shop_place_holder_white" android:layout_marginStart="@dimen/dp_2"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/rlContent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_16" android:textColor="@android:color/white" android:id="@+id/txtTitle" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/CustomHeaderLable"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:layout_below="@+id/txtTitle" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dp_2">
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_12" android:textColor="@color/sky_blue_color" android:gravity="center" android:id="@+id/txtOrderStatus" android:background="@drawable/bg_white_25" android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8"/>
+                    <View android:layout_gravity="center_vertical" android:background="@color/white" android:layout_width="1dp" android:layout_height="10dp" android:alpha="0.5" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_6"/>
+                    <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@+id/txtOrderId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:orientation="vertical" android:id="@+id/llReportOrder" android:background="?attr/selectableItemBackground" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_40" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ic_report_order"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_10" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/lbl_report"/>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/flMoreOption" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginEnd="8dp">
+                <View android:background="@drawable/bg_white" android:layout_width="40dp" android:layout_height="40dp" android:alpha="0.1"/>
+                <ImageView android:layout_gravity="center" android:background="@drawable/bg_ripple_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_options" android:scaleType="center" android:minWidth="@dimen/dp_40" android:minHeight="@dimen/dp_40"/>
+            </FrameLayout>
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

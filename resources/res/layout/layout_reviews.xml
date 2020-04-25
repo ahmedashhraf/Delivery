@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_56">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_12" android:textColor="@color/dark_gray_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_4" android:text="@string/lbl_costumers_rating" android:includeFontPadding="false"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <RatingBar android:layout_gravity="center_vertical" android:id="@+id/rbAllOver" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:progressDrawable="@drawable/custom_rating_review_new" android:rating="5" android:isIndicator="true" android:layout_marginStart="-1dp"/>
+                <com.mrsool.customeview.CustomeTextViewRobotoMedium android:textSize="@dimen/sp_14" android:textColor="@color/dark_gray4" android:gravity="center_vertical" android:id="@+id/tvRting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_20" android:text="5.0" android:includeFontPadding="false" android:layout_below="@+id/tvReviewLbl" android:layout_marginStart="@dimen/dp_10" android:layout_toEndOf="@+id/rbAllOver"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/sky_blue_color_lite4" android:id="@+id/tvReviewLbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_reviews" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_9"/>
+            <ImageView android:id="@+id/ivArrowRightRating" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_14" android:layout_marginTop="@dimen/dp_1" android:src="@drawable/ic_arrow_right_menu"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/order_place_holder_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+</LinearLayout>

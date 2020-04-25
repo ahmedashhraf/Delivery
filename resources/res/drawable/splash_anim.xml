@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="true">
+    <item android:duration="500" android:drawable="@drawable/app_login_header_iocn"/>
+    <item android:duration="500" android:drawable="@drawable/app_login_header_iocn"/>
+    <item android:duration="500" android:drawable="@drawable/app_login_header_iocn"/>
+    <item android:duration="500" android:drawable="@drawable/app_login_header_iocn"/>
+    <item android:duration="500" android:drawable="@drawable/app_login_header_iocn"/>
+</animation-list>

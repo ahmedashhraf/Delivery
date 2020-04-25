@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/opp_btn_background_gpay_no_shadow" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="40sp" android:contentDescription="@string/gpay_content_description">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+        <ImageView android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/opp_btn_content_gpay_short" android:scaleType="fitCenter" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/opp_btn_gpay_overlay" android:scaleType="fitXY"/>
+</RelativeLayout>

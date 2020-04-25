@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/infoPageBackgroundColor" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#b9b9b9" android:id="@+id/tray_icon" android:clickable="false" android:text="@string/info_screen_tray_icon" style="@style/InfoButtonStyle"/>
+        <TextView android:id="@+id/view_webpage" android:text="@string/view_webpage" android:drawableLeft="@drawable/sticker_3rdparty_web" android:drawableStart="@drawable/sticker_3rdparty_web" style="@style/InfoButtonStyle"/>
+        <TextView android:id="@+id/send_email" android:text="@string/send_email" android:drawableLeft="@drawable/sticker_3rdparty_email" android:drawableStart="@drawable/sticker_3rdparty_email" style="@style/InfoButtonStyle"/>
+        <TextView android:id="@+id/privacy_policy" android:text="@string/privacy_policy" android:drawableLeft="@drawable/sticker_3rdparty_privacy" android:drawableStart="@drawable/sticker_3rdparty_privacy" style="@style/InfoButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

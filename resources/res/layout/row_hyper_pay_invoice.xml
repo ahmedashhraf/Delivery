@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/text_color_7a" android:id="@+id/tvLabel" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="@dimen/sp_14" android:text="@string/lbl_total_" android:layout_weight="1"/>
+        <com.mrsool.customeview.CustomeTextViewRobotoRegular android:textSize="@dimen/sp_12" android:textColor="@color/text_color_7a" android:id="@+id/tvValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/sp_14" android:text="-"/>
+    </LinearLayout>
+</LinearLayout>
